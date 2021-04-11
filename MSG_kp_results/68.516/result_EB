@@ -1,0 +1,2087 @@
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<<<<<<<<<<  Start calculation of msg 68.516  >>>>>>>>>>
+
+========== Start kp calculation for msg 68.516  kpoint A ==========
+
+
+++++++++++  Irreducible linear co-representations of msg 68.516, kpoint A ++++++++++
+unitary SG: 15  k label: A
+  k =  0.000  0.000  0.500 (conv)   0.000  0.000  0.500 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.5000000  0.5000000)
+SU(2):  ( 0.0000000  0.0000000)  (-0.0000000 -1.0000000) 
+        (-0.0000000 -1.0000000)  ( 0.0000000  0.0000000) 
+2-th op 
+O(3):      -1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    0    0
+            0    1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.5000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+Representation matrices of generators:
+IR:  GM1+  Dim:  1
+1-th op: 
+ [[1]]
+2-th op: 
+ [[1]]
+Anti-unitary op: 
+ [[1]]
+
+IR:  GM1-  Dim:  1
+1-th op: 
+ [[1]]
+2-th op: 
+ [[-1]]
+Anti-unitary op: 
+ [[1]]
+
+IR:  GM2+  Dim:  1
+1-th op: 
+ [[-1]]
+2-th op: 
+ [[1]]
+Anti-unitary op: 
+ [[1]]
+
+IR:  GM2-  Dim:  1
+1-th op: 
+ [[-1]]
+2-th op: 
+ [[-1]]
+Anti-unitary op: 
+ [[1]]
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+********** Start of MSG 68.516  A1  **********
+unitary SG: 15  k label: A
+  k =  0.000  0.000  0.500 (conv)   0.000  0.000  0.500 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.5000000  0.5000000)
+SU(2):  ( 0.0000000  0.0000000)  (-0.0000000 -1.0000000) 
+        (-0.0000000 -1.0000000)  ( 0.0000000  0.0000000) 
+2-th op 
+O(3):      -1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    0    0
+            0    1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.5000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[0 1]
+ [1 0]]
+2-th op: 
+ [[1 0]
+ [0 -1]]
+Antiunitary op:
+ [[0 1]
+ [1 0]]
+
+
+Print kp results:
+
+
+==========  Result of msg 68.516  A1  order = [1, 1]  ==========
+Number of independent kp models: 4
+-----------------------------------------------------
+1-th kp model:
+Matrix([[0, -I*By*Ex], [I*By*Ex, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM2-  
+Coefficient basis:
+By*Ex
+
+Matrix basis:
+Symbol: s_2   Expression: Matrix([[0, -I], [I, 0]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[0, -I*Bx*Ey], [I*Bx*Ey, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM2-  
+Coefficient basis:
+Bx*Ey
+
+Matrix basis:
+Symbol: s_2   Expression: Matrix([[0, -I], [I, 0]]) 
+
+-----------------------------------------------------
+3-th kp model:
+Matrix([[0, Bz*Ey], [Bz*Ey, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+Bz*Ey
+
+Matrix basis:
+Symbol: s_1   Expression: Matrix([[0, 1], [1, 0]]) 
+
+-----------------------------------------------------
+4-th kp model:
+Matrix([[0, By*Ez], [By*Ez, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+By*Ez
+
+Matrix basis:
+Symbol: s_1   Expression: Matrix([[0, 1], [1, 0]]) 
+
+-----------------------------------------------------
+
+********** End of msg 68.516  A1  **********
+
+
+
+********** Start of MSG 68.516  A2d  **********
+unitary SG: 15  k label: A
+  k =  0.000  0.000  0.500 (conv)   0.000  0.000  0.500 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.5000000  0.5000000)
+SU(2):  ( 0.0000000  0.0000000)  (-0.0000000 -1.0000000) 
+        (-0.0000000 -1.0000000)  ( 0.0000000  0.0000000) 
+2-th op 
+O(3):      -1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    0    0
+            0    1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.5000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[0 -1]
+ [1 0]]
+2-th op: 
+ [[1 0]
+ [0 -1]]
+Antiunitary op:
+ [[0 1]
+ [1 0]]
+
+
+Print kp results:
+
+
+==========  Result of msg 68.516  A2d  order = [1, 1]  ==========
+Number of independent kp models: 4
+-----------------------------------------------------
+1-th kp model:
+Matrix([[0, By*Ex], [By*Ex, 0]])
+Basis vector: [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM2-  
+Coefficient basis:
+By*Ex
+
+Matrix basis:
+Symbol: s_1   Expression: Matrix([[0, 1], [1, 0]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[0, Bx*Ey], [Bx*Ey, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM2-  
+Coefficient basis:
+Bx*Ey
+
+Matrix basis:
+Symbol: s_1   Expression: Matrix([[0, 1], [1, 0]]) 
+
+-----------------------------------------------------
+3-th kp model:
+Matrix([[0, -I*Bz*Ey], [I*Bz*Ey, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+Bz*Ey
+
+Matrix basis:
+Symbol: s_2   Expression: Matrix([[0, -I], [I, 0]]) 
+
+-----------------------------------------------------
+4-th kp model:
+Matrix([[0, -I*By*Ez], [I*By*Ez, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+By*Ez
+
+Matrix basis:
+Symbol: s_2   Expression: Matrix([[0, -I], [I, 0]]) 
+
+-----------------------------------------------------
+
+********** End of msg 68.516  A2d  **********
+
+========== Finish kp calculation for msg 68.516  kpoint A ==========
+
+========== Start kp calculation for msg 68.516  kpoint GM ==========
+
+
+++++++++++  Irreducible linear co-representations of msg 68.516, kpoint GM ++++++++++
+unitary SG: 15  k label: GM
+  k =  0.000  0.000  0.000 (conv)   0.000  0.000  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.5000000  0.5000000)
+SU(2):  ( 0.0000000  0.0000000)  (-0.0000000 -1.0000000) 
+        (-0.0000000 -1.0000000)  ( 0.0000000  0.0000000) 
+2-th op 
+O(3):      -1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    0    0
+            0    1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.5000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+Representation matrices of generators:
+IR:  GM1+  Dim:  1
+1-th op: 
+ [[1]]
+2-th op: 
+ [[1]]
+Anti-unitary op: 
+ [[1]]
+
+IR:  GM1-  Dim:  1
+1-th op: 
+ [[1]]
+2-th op: 
+ [[-1]]
+Anti-unitary op: 
+ [[1]]
+
+IR:  GM2+  Dim:  1
+1-th op: 
+ [[-1]]
+2-th op: 
+ [[1]]
+Anti-unitary op: 
+ [[1]]
+
+IR:  GM2-  Dim:  1
+1-th op: 
+ [[-1]]
+2-th op: 
+ [[-1]]
+Anti-unitary op: 
+ [[1]]
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+********** Start of MSG 68.516  GM1+  **********
+unitary SG: 15  k label: GM
+  k =  0.000  0.000  0.000 (conv)   0.000  0.000  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.5000000  0.5000000)
+SU(2):  ( 0.0000000  0.0000000)  (-0.0000000 -1.0000000) 
+        (-0.0000000 -1.0000000)  ( 0.0000000  0.0000000) 
+2-th op 
+O(3):      -1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    0    0
+            0    1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.5000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[1]]
+2-th op: 
+ [[1]]
+Antiunitary op:
+ [[1]]
+
+
+Print kp results:
+
+
+==========  Result of msg 68.516  GM1+  order = [1, 1]  ==========
+No symmetry-allowed kp models.
+
+********** End of msg 68.516  GM1+  **********
+
+
+
+********** Start of MSG 68.516  GM1-  **********
+unitary SG: 15  k label: GM
+  k =  0.000  0.000  0.000 (conv)   0.000  0.000  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.5000000  0.5000000)
+SU(2):  ( 0.0000000  0.0000000)  (-0.0000000 -1.0000000) 
+        (-0.0000000 -1.0000000)  ( 0.0000000  0.0000000) 
+2-th op 
+O(3):      -1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    0    0
+            0    1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.5000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[1]]
+2-th op: 
+ [[-1]]
+Antiunitary op:
+ [[1]]
+
+
+Print kp results:
+
+
+==========  Result of msg 68.516  GM1-  order = [1, 1]  ==========
+No symmetry-allowed kp models.
+
+********** End of msg 68.516  GM1-  **********
+
+
+
+********** Start of MSG 68.516  GM2+  **********
+unitary SG: 15  k label: GM
+  k =  0.000  0.000  0.000 (conv)   0.000  0.000  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.5000000  0.5000000)
+SU(2):  ( 0.0000000  0.0000000)  (-0.0000000 -1.0000000) 
+        (-0.0000000 -1.0000000)  ( 0.0000000  0.0000000) 
+2-th op 
+O(3):      -1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    0    0
+            0    1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.5000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[-1]]
+2-th op: 
+ [[1]]
+Antiunitary op:
+ [[1]]
+
+
+Print kp results:
+
+
+==========  Result of msg 68.516  GM2+  order = [1, 1]  ==========
+No symmetry-allowed kp models.
+
+********** End of msg 68.516  GM2+  **********
+
+
+
+********** Start of MSG 68.516  GM2-  **********
+unitary SG: 15  k label: GM
+  k =  0.000  0.000  0.000 (conv)   0.000  0.000  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.5000000  0.5000000)
+SU(2):  ( 0.0000000  0.0000000)  (-0.0000000 -1.0000000) 
+        (-0.0000000 -1.0000000)  ( 0.0000000  0.0000000) 
+2-th op 
+O(3):      -1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    0    0
+            0    1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.5000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[-1]]
+2-th op: 
+ [[-1]]
+Antiunitary op:
+ [[1]]
+
+
+Print kp results:
+
+
+==========  Result of msg 68.516  GM2-  order = [1, 1]  ==========
+No symmetry-allowed kp models.
+
+********** End of msg 68.516  GM2-  **********
+
+
+
+********** Start of MSG 68.516  GM3d  **********
+unitary SG: 15  k label: GM
+  k =  0.000  0.000  0.000 (conv)   0.000  0.000  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.5000000  0.5000000)
+SU(2):  ( 0.0000000  0.0000000)  (-0.0000000 -1.0000000) 
+        (-0.0000000 -1.0000000)  ( 0.0000000  0.0000000) 
+2-th op 
+O(3):      -1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    0    0
+            0    1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.5000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[-I]]
+2-th op: 
+ [[1]]
+Antiunitary op:
+ [[1]]
+
+
+Print kp results:
+
+
+==========  Result of msg 68.516  GM3d  order = [1, 1]  ==========
+No symmetry-allowed kp models.
+
+********** End of msg 68.516  GM3d  **********
+
+
+
+********** Start of MSG 68.516  GM4d  **********
+unitary SG: 15  k label: GM
+  k =  0.000  0.000  0.000 (conv)   0.000  0.000  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.5000000  0.5000000)
+SU(2):  ( 0.0000000  0.0000000)  (-0.0000000 -1.0000000) 
+        (-0.0000000 -1.0000000)  ( 0.0000000  0.0000000) 
+2-th op 
+O(3):      -1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    0    0
+            0    1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.5000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[I]]
+2-th op: 
+ [[1]]
+Antiunitary op:
+ [[1]]
+
+
+Print kp results:
+
+
+==========  Result of msg 68.516  GM4d  order = [1, 1]  ==========
+No symmetry-allowed kp models.
+
+********** End of msg 68.516  GM4d  **********
+
+
+
+********** Start of MSG 68.516  GM5d  **********
+unitary SG: 15  k label: GM
+  k =  0.000  0.000  0.000 (conv)   0.000  0.000  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.5000000  0.5000000)
+SU(2):  ( 0.0000000  0.0000000)  (-0.0000000 -1.0000000) 
+        (-0.0000000 -1.0000000)  ( 0.0000000  0.0000000) 
+2-th op 
+O(3):      -1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    0    0
+            0    1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.5000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[-I]]
+2-th op: 
+ [[-1]]
+Antiunitary op:
+ [[1]]
+
+
+Print kp results:
+
+
+==========  Result of msg 68.516  GM5d  order = [1, 1]  ==========
+No symmetry-allowed kp models.
+
+********** End of msg 68.516  GM5d  **********
+
+
+
+********** Start of MSG 68.516  GM6d  **********
+unitary SG: 15  k label: GM
+  k =  0.000  0.000  0.000 (conv)   0.000  0.000  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.5000000  0.5000000)
+SU(2):  ( 0.0000000  0.0000000)  (-0.0000000 -1.0000000) 
+        (-0.0000000 -1.0000000)  ( 0.0000000  0.0000000) 
+2-th op 
+O(3):      -1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    0    0
+            0    1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.5000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[I]]
+2-th op: 
+ [[-1]]
+Antiunitary op:
+ [[1]]
+
+
+Print kp results:
+
+
+==========  Result of msg 68.516  GM6d  order = [1, 1]  ==========
+No symmetry-allowed kp models.
+
+********** End of msg 68.516  GM6d  **********
+
+========== Finish kp calculation for msg 68.516  kpoint GM ==========
+
+========== Start kp calculation for msg 68.516  kpoint L ==========
+
+
+++++++++++  Irreducible linear co-representations of msg 68.516, kpoint L ++++++++++
+unitary SG: 15  k label: L
+  k =  0.500 -0.500 -0.500 (conv)   0.500  0.000 -0.500 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):      -1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    0    0
+            0   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.5000000  0.0000000)
+SU(2):  ( 0.0000000  0.0000000)  ( 0.0000000 -1.0000000) 
+        ( 0.0000000 -1.0000000)  ( 0.0000000  0.0000000) 
+
+
+Representation matrices of generators:
+IR:  GM1+  Dim:  1
+1-th op: 
+ [[1]]
+Anti-unitary op: 
+ [[1]]
+
+IR:  GM1-  Dim:  1
+1-th op: 
+ [[-1]]
+Anti-unitary op: 
+ [[1]]
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+********** Start of MSG 68.516  L1+_L1-  **********
+unitary SG: 15  k label: L
+  k =  0.500 -0.500 -0.500 (conv)   0.500  0.000 -0.500 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):      -1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    0    0
+            0   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.5000000  0.0000000)
+SU(2):  ( 0.0000000  0.0000000)  ( 0.0000000 -1.0000000) 
+        ( 0.0000000 -1.0000000)  ( 0.0000000  0.0000000) 
+
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[1 0]
+ [0 -1]]
+Antiunitary op:
+ [[0 1]
+ [1 0]]
+
+
+Print kp results:
+
+
+==========  Result of msg 68.516  L1+_L1-  order = [1, 1]  ==========
+Number of independent kp models: 8
+-----------------------------------------------------
+1-th kp model:
+Matrix([[0, Bz*Ex], [Bz*Ex, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+Bz*Ex
+
+Matrix basis:
+Symbol: s_1   Expression: Matrix([[0, 1], [1, 0]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[0, -I*Bz*Ex], [I*Bz*Ex, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+Bz*Ex
+
+Matrix basis:
+Symbol: s_2   Expression: Matrix([[0, -I], [I, 0]]) 
+
+-----------------------------------------------------
+3-th kp model:
+Matrix([[0, Bz*Ey], [Bz*Ey, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+Bz*Ey
+
+Matrix basis:
+Symbol: s_1   Expression: Matrix([[0, 1], [1, 0]]) 
+
+-----------------------------------------------------
+4-th kp model:
+Matrix([[0, -I*Bz*Ey], [I*Bz*Ey, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+Bz*Ey
+
+Matrix basis:
+Symbol: s_2   Expression: Matrix([[0, -I], [I, 0]]) 
+
+-----------------------------------------------------
+5-th kp model:
+Matrix([[0, Bx*Ez], [Bx*Ez, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+Bx*Ez
+
+Matrix basis:
+Symbol: s_1   Expression: Matrix([[0, 1], [1, 0]]) 
+
+-----------------------------------------------------
+6-th kp model:
+Matrix([[0, -I*Bx*Ez], [I*Bx*Ez, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+Bx*Ez
+
+Matrix basis:
+Symbol: s_2   Expression: Matrix([[0, -I], [I, 0]]) 
+
+-----------------------------------------------------
+7-th kp model:
+Matrix([[0, By*Ez], [By*Ez, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+By*Ez
+
+Matrix basis:
+Symbol: s_1   Expression: Matrix([[0, 1], [1, 0]]) 
+
+-----------------------------------------------------
+8-th kp model:
+Matrix([[0, -I*By*Ez], [I*By*Ez, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+By*Ez
+
+Matrix basis:
+Symbol: s_2   Expression: Matrix([[0, -I], [I, 0]]) 
+
+-----------------------------------------------------
+
+********** End of msg 68.516  L1+_L1-  **********
+
+
+
+********** Start of MSG 68.516  L2d_L3d  **********
+unitary SG: 15  k label: L
+  k =  0.500 -0.500 -0.500 (conv)   0.500  0.000 -0.500 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):      -1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    0    0
+            0   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.5000000  0.0000000)
+SU(2):  ( 0.0000000  0.0000000)  ( 0.0000000 -1.0000000) 
+        ( 0.0000000 -1.0000000)  ( 0.0000000  0.0000000) 
+
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[1 0]
+ [0 -1]]
+Antiunitary op:
+ [[0 1]
+ [1 0]]
+
+
+Print kp results:
+
+
+==========  Result of msg 68.516  L2d_L3d  order = [1, 1]  ==========
+Number of independent kp models: 8
+-----------------------------------------------------
+1-th kp model:
+Matrix([[0, Bz*Ex], [Bz*Ex, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+Bz*Ex
+
+Matrix basis:
+Symbol: s_1   Expression: Matrix([[0, 1], [1, 0]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[0, -I*Bz*Ex], [I*Bz*Ex, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+Bz*Ex
+
+Matrix basis:
+Symbol: s_2   Expression: Matrix([[0, -I], [I, 0]]) 
+
+-----------------------------------------------------
+3-th kp model:
+Matrix([[0, Bz*Ey], [Bz*Ey, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+Bz*Ey
+
+Matrix basis:
+Symbol: s_1   Expression: Matrix([[0, 1], [1, 0]]) 
+
+-----------------------------------------------------
+4-th kp model:
+Matrix([[0, -I*Bz*Ey], [I*Bz*Ey, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+Bz*Ey
+
+Matrix basis:
+Symbol: s_2   Expression: Matrix([[0, -I], [I, 0]]) 
+
+-----------------------------------------------------
+5-th kp model:
+Matrix([[0, Bx*Ez], [Bx*Ez, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+Bx*Ez
+
+Matrix basis:
+Symbol: s_1   Expression: Matrix([[0, 1], [1, 0]]) 
+
+-----------------------------------------------------
+6-th kp model:
+Matrix([[0, -I*Bx*Ez], [I*Bx*Ez, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+Bx*Ez
+
+Matrix basis:
+Symbol: s_2   Expression: Matrix([[0, -I], [I, 0]]) 
+
+-----------------------------------------------------
+7-th kp model:
+Matrix([[0, By*Ez], [By*Ez, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+By*Ez
+
+Matrix basis:
+Symbol: s_1   Expression: Matrix([[0, 1], [1, 0]]) 
+
+-----------------------------------------------------
+8-th kp model:
+Matrix([[0, -I*By*Ez], [I*By*Ez, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+By*Ez
+
+Matrix basis:
+Symbol: s_2   Expression: Matrix([[0, -I], [I, 0]]) 
+
+-----------------------------------------------------
+
+********** End of msg 68.516  L2d_L3d  **********
+
+========== Finish kp calculation for msg 68.516  kpoint L ==========
+
+========== Start kp calculation for msg 68.516  kpoint M ==========
+
+
+++++++++++  Irreducible linear co-representations of msg 68.516, kpoint M ++++++++++
+unitary SG: 15  k label: M
+  k =  1.000  0.000  0.500 (conv)   0.500  0.500  0.500 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.5000000  0.5000000)
+SU(2):  ( 0.0000000  0.0000000)  (-0.0000000 -1.0000000) 
+        (-0.0000000 -1.0000000)  ( 0.0000000  0.0000000) 
+2-th op 
+O(3):      -1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    0    0
+            0    1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.5000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+Representation matrices of generators:
+IR:  GM1+  Dim:  1
+1-th op: 
+ [[1]]
+2-th op: 
+ [[1]]
+Anti-unitary op: 
+ [[1]]
+
+IR:  GM1-  Dim:  1
+1-th op: 
+ [[1]]
+2-th op: 
+ [[-1]]
+Anti-unitary op: 
+ [[1]]
+
+IR:  GM2+  Dim:  1
+1-th op: 
+ [[-1]]
+2-th op: 
+ [[1]]
+Anti-unitary op: 
+ [[1]]
+
+IR:  GM2-  Dim:  1
+1-th op: 
+ [[-1]]
+2-th op: 
+ [[-1]]
+Anti-unitary op: 
+ [[1]]
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+********** Start of MSG 68.516  M1  **********
+unitary SG: 15  k label: M
+  k =  1.000  0.000  0.500 (conv)   0.500  0.500  0.500 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.5000000  0.5000000)
+SU(2):  ( 0.0000000  0.0000000)  (-0.0000000 -1.0000000) 
+        (-0.0000000 -1.0000000)  ( 0.0000000  0.0000000) 
+2-th op 
+O(3):      -1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    0    0
+            0    1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.5000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[0 1]
+ [1 0]]
+2-th op: 
+ [[-1 0]
+ [0 1]]
+Antiunitary op:
+ [[0 1]
+ [1 0]]
+
+
+Print kp results:
+
+
+==========  Result of msg 68.516  M1  order = [1, 1]  ==========
+Number of independent kp models: 4
+-----------------------------------------------------
+1-th kp model:
+Matrix([[0, -I*By*Ex], [I*By*Ex, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM2-  
+Coefficient basis:
+By*Ex
+
+Matrix basis:
+Symbol: s_2   Expression: Matrix([[0, -I], [I, 0]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[0, -I*Bx*Ey], [I*Bx*Ey, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM2-  
+Coefficient basis:
+Bx*Ey
+
+Matrix basis:
+Symbol: s_2   Expression: Matrix([[0, -I], [I, 0]]) 
+
+-----------------------------------------------------
+3-th kp model:
+Matrix([[0, Bz*Ey], [Bz*Ey, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+Bz*Ey
+
+Matrix basis:
+Symbol: s_1   Expression: Matrix([[0, 1], [1, 0]]) 
+
+-----------------------------------------------------
+4-th kp model:
+Matrix([[0, By*Ez], [By*Ez, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+By*Ez
+
+Matrix basis:
+Symbol: s_1   Expression: Matrix([[0, 1], [1, 0]]) 
+
+-----------------------------------------------------
+
+********** End of msg 68.516  M1  **********
+
+
+
+********** Start of MSG 68.516  M2d  **********
+unitary SG: 15  k label: M
+  k =  1.000  0.000  0.500 (conv)   0.500  0.500  0.500 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.5000000  0.5000000)
+SU(2):  ( 0.0000000  0.0000000)  (-0.0000000 -1.0000000) 
+        (-0.0000000 -1.0000000)  ( 0.0000000  0.0000000) 
+2-th op 
+O(3):      -1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    0    0
+            0    1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.5000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[0 -1]
+ [1 0]]
+2-th op: 
+ [[-1 0]
+ [0 1]]
+Antiunitary op:
+ [[0 1]
+ [1 0]]
+
+
+Print kp results:
+
+
+==========  Result of msg 68.516  M2d  order = [1, 1]  ==========
+Number of independent kp models: 4
+-----------------------------------------------------
+1-th kp model:
+Matrix([[0, By*Ex], [By*Ex, 0]])
+Basis vector: [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM2-  
+Coefficient basis:
+By*Ex
+
+Matrix basis:
+Symbol: s_1   Expression: Matrix([[0, 1], [1, 0]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[0, Bx*Ey], [Bx*Ey, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM2-  
+Coefficient basis:
+Bx*Ey
+
+Matrix basis:
+Symbol: s_1   Expression: Matrix([[0, 1], [1, 0]]) 
+
+-----------------------------------------------------
+3-th kp model:
+Matrix([[0, -I*Bz*Ey], [I*Bz*Ey, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+Bz*Ey
+
+Matrix basis:
+Symbol: s_2   Expression: Matrix([[0, -I], [I, 0]]) 
+
+-----------------------------------------------------
+4-th kp model:
+Matrix([[0, -I*By*Ez], [I*By*Ez, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+By*Ez
+
+Matrix basis:
+Symbol: s_2   Expression: Matrix([[0, -I], [I, 0]]) 
+
+-----------------------------------------------------
+
+********** End of msg 68.516  M2d  **********
+
+========== Finish kp calculation for msg 68.516  kpoint M ==========
+
+========== Start kp calculation for msg 68.516  kpoint V ==========
+
+
+++++++++++  Irreducible linear co-representations of msg 68.516, kpoint V ++++++++++
+unitary SG: 15  k label: V
+  k =  0.500 -0.500  0.000 (conv)   0.500  0.000  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):      -1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    0    0
+            0   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.5000000  0.0000000)
+SU(2):  ( 0.0000000  0.0000000)  ( 0.0000000 -1.0000000) 
+        ( 0.0000000 -1.0000000)  ( 0.0000000  0.0000000) 
+
+
+Representation matrices of generators:
+IR:  GM1+  Dim:  1
+1-th op: 
+ [[1]]
+Anti-unitary op: 
+ [[1]]
+
+IR:  GM1-  Dim:  1
+1-th op: 
+ [[-1]]
+Anti-unitary op: 
+ [[1]]
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+********** Start of MSG 68.516  V1+_V1-  **********
+unitary SG: 15  k label: V
+  k =  0.500 -0.500  0.000 (conv)   0.500  0.000  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):      -1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    0    0
+            0   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.5000000  0.0000000)
+SU(2):  ( 0.0000000  0.0000000)  ( 0.0000000 -1.0000000) 
+        ( 0.0000000 -1.0000000)  ( 0.0000000  0.0000000) 
+
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[1 0]
+ [0 -1]]
+Antiunitary op:
+ [[0 1]
+ [1 0]]
+
+
+Print kp results:
+
+
+==========  Result of msg 68.516  V1+_V1-  order = [1, 1]  ==========
+Number of independent kp models: 8
+-----------------------------------------------------
+1-th kp model:
+Matrix([[0, Bz*Ex], [Bz*Ex, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+Bz*Ex
+
+Matrix basis:
+Symbol: s_1   Expression: Matrix([[0, 1], [1, 0]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[0, -I*Bz*Ex], [I*Bz*Ex, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+Bz*Ex
+
+Matrix basis:
+Symbol: s_2   Expression: Matrix([[0, -I], [I, 0]]) 
+
+-----------------------------------------------------
+3-th kp model:
+Matrix([[0, Bz*Ey], [Bz*Ey, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+Bz*Ey
+
+Matrix basis:
+Symbol: s_1   Expression: Matrix([[0, 1], [1, 0]]) 
+
+-----------------------------------------------------
+4-th kp model:
+Matrix([[0, -I*Bz*Ey], [I*Bz*Ey, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+Bz*Ey
+
+Matrix basis:
+Symbol: s_2   Expression: Matrix([[0, -I], [I, 0]]) 
+
+-----------------------------------------------------
+5-th kp model:
+Matrix([[0, Bx*Ez], [Bx*Ez, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+Bx*Ez
+
+Matrix basis:
+Symbol: s_1   Expression: Matrix([[0, 1], [1, 0]]) 
+
+-----------------------------------------------------
+6-th kp model:
+Matrix([[0, -I*Bx*Ez], [I*Bx*Ez, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+Bx*Ez
+
+Matrix basis:
+Symbol: s_2   Expression: Matrix([[0, -I], [I, 0]]) 
+
+-----------------------------------------------------
+7-th kp model:
+Matrix([[0, By*Ez], [By*Ez, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+By*Ez
+
+Matrix basis:
+Symbol: s_1   Expression: Matrix([[0, 1], [1, 0]]) 
+
+-----------------------------------------------------
+8-th kp model:
+Matrix([[0, -I*By*Ez], [I*By*Ez, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+By*Ez
+
+Matrix basis:
+Symbol: s_2   Expression: Matrix([[0, -I], [I, 0]]) 
+
+-----------------------------------------------------
+
+********** End of msg 68.516  V1+_V1-  **********
+
+
+
+********** Start of MSG 68.516  V2d_V3d  **********
+unitary SG: 15  k label: V
+  k =  0.500 -0.500  0.000 (conv)   0.500  0.000  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):      -1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    0    0
+            0   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.5000000  0.0000000)
+SU(2):  ( 0.0000000  0.0000000)  ( 0.0000000 -1.0000000) 
+        ( 0.0000000 -1.0000000)  ( 0.0000000  0.0000000) 
+
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[1 0]
+ [0 -1]]
+Antiunitary op:
+ [[0 1]
+ [1 0]]
+
+
+Print kp results:
+
+
+==========  Result of msg 68.516  V2d_V3d  order = [1, 1]  ==========
+Number of independent kp models: 8
+-----------------------------------------------------
+1-th kp model:
+Matrix([[0, Bz*Ex], [Bz*Ex, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+Bz*Ex
+
+Matrix basis:
+Symbol: s_1   Expression: Matrix([[0, 1], [1, 0]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[0, -I*Bz*Ex], [I*Bz*Ex, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+Bz*Ex
+
+Matrix basis:
+Symbol: s_2   Expression: Matrix([[0, -I], [I, 0]]) 
+
+-----------------------------------------------------
+3-th kp model:
+Matrix([[0, Bz*Ey], [Bz*Ey, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+Bz*Ey
+
+Matrix basis:
+Symbol: s_1   Expression: Matrix([[0, 1], [1, 0]]) 
+
+-----------------------------------------------------
+4-th kp model:
+Matrix([[0, -I*Bz*Ey], [I*Bz*Ey, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+Bz*Ey
+
+Matrix basis:
+Symbol: s_2   Expression: Matrix([[0, -I], [I, 0]]) 
+
+-----------------------------------------------------
+5-th kp model:
+Matrix([[0, Bx*Ez], [Bx*Ez, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+Bx*Ez
+
+Matrix basis:
+Symbol: s_1   Expression: Matrix([[0, 1], [1, 0]]) 
+
+-----------------------------------------------------
+6-th kp model:
+Matrix([[0, -I*Bx*Ez], [I*Bx*Ez, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+Bx*Ez
+
+Matrix basis:
+Symbol: s_2   Expression: Matrix([[0, -I], [I, 0]]) 
+
+-----------------------------------------------------
+7-th kp model:
+Matrix([[0, By*Ez], [By*Ez, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+By*Ez
+
+Matrix basis:
+Symbol: s_1   Expression: Matrix([[0, 1], [1, 0]]) 
+
+-----------------------------------------------------
+8-th kp model:
+Matrix([[0, -I*By*Ez], [I*By*Ez, 0]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1-  
+Coefficient basis:
+By*Ez
+
+Matrix basis:
+Symbol: s_2   Expression: Matrix([[0, -I], [I, 0]]) 
+
+-----------------------------------------------------
+
+********** End of msg 68.516  V2d_V3d  **********
+
+========== Finish kp calculation for msg 68.516  kpoint V ==========
+
+========== Start kp calculation for msg 68.516  kpoint Y ==========
+
+
+++++++++++  Irreducible linear co-representations of msg 68.516, kpoint Y ++++++++++
+unitary SG: 15  k label: Y
+  k =  1.000  0.000  0.000 (conv)   0.500  0.500  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.5000000  0.5000000)
+SU(2):  ( 0.0000000  0.0000000)  (-0.0000000 -1.0000000) 
+        (-0.0000000 -1.0000000)  ( 0.0000000  0.0000000) 
+2-th op 
+O(3):      -1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    0    0
+            0    1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.5000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+Representation matrices of generators:
+IR:  GM1+  Dim:  1
+1-th op: 
+ [[1]]
+2-th op: 
+ [[1]]
+Anti-unitary op: 
+ [[1]]
+
+IR:  GM1-  Dim:  1
+1-th op: 
+ [[1]]
+2-th op: 
+ [[-1]]
+Anti-unitary op: 
+ [[1]]
+
+IR:  GM2+  Dim:  1
+1-th op: 
+ [[-1]]
+2-th op: 
+ [[1]]
+Anti-unitary op: 
+ [[1]]
+
+IR:  GM2-  Dim:  1
+1-th op: 
+ [[-1]]
+2-th op: 
+ [[-1]]
+Anti-unitary op: 
+ [[1]]
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+********** Start of MSG 68.516  Y1+  **********
+unitary SG: 15  k label: Y
+  k =  1.000  0.000  0.000 (conv)   0.500  0.500  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.5000000  0.5000000)
+SU(2):  ( 0.0000000  0.0000000)  (-0.0000000 -1.0000000) 
+        (-0.0000000 -1.0000000)  ( 0.0000000  0.0000000) 
+2-th op 
+O(3):      -1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    0    0
+            0    1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.5000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[1]]
+2-th op: 
+ [[-1]]
+Antiunitary op:
+ [[1]]
+
+
+Print kp results:
+
+
+==========  Result of msg 68.516  Y1+  order = [1, 1]  ==========
+No symmetry-allowed kp models.
+
+********** End of msg 68.516  Y1+  **********
+
+
+
+********** Start of MSG 68.516  Y1-  **********
+unitary SG: 15  k label: Y
+  k =  1.000  0.000  0.000 (conv)   0.500  0.500  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.5000000  0.5000000)
+SU(2):  ( 0.0000000  0.0000000)  (-0.0000000 -1.0000000) 
+        (-0.0000000 -1.0000000)  ( 0.0000000  0.0000000) 
+2-th op 
+O(3):      -1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    0    0
+            0    1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.5000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[1]]
+2-th op: 
+ [[1]]
+Antiunitary op:
+ [[1]]
+
+
+Print kp results:
+
+
+==========  Result of msg 68.516  Y1-  order = [1, 1]  ==========
+No symmetry-allowed kp models.
+
+********** End of msg 68.516  Y1-  **********
+
+
+
+********** Start of MSG 68.516  Y2+  **********
+unitary SG: 15  k label: Y
+  k =  1.000  0.000  0.000 (conv)   0.500  0.500  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.5000000  0.5000000)
+SU(2):  ( 0.0000000  0.0000000)  (-0.0000000 -1.0000000) 
+        (-0.0000000 -1.0000000)  ( 0.0000000  0.0000000) 
+2-th op 
+O(3):      -1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    0    0
+            0    1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.5000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[-1]]
+2-th op: 
+ [[-1]]
+Antiunitary op:
+ [[1]]
+
+
+Print kp results:
+
+
+==========  Result of msg 68.516  Y2+  order = [1, 1]  ==========
+No symmetry-allowed kp models.
+
+********** End of msg 68.516  Y2+  **********
+
+
+
+********** Start of MSG 68.516  Y2-  **********
+unitary SG: 15  k label: Y
+  k =  1.000  0.000  0.000 (conv)   0.500  0.500  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.5000000  0.5000000)
+SU(2):  ( 0.0000000  0.0000000)  (-0.0000000 -1.0000000) 
+        (-0.0000000 -1.0000000)  ( 0.0000000  0.0000000) 
+2-th op 
+O(3):      -1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    0    0
+            0    1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.5000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[-1]]
+2-th op: 
+ [[1]]
+Antiunitary op:
+ [[1]]
+
+
+Print kp results:
+
+
+==========  Result of msg 68.516  Y2-  order = [1, 1]  ==========
+No symmetry-allowed kp models.
+
+********** End of msg 68.516  Y2-  **********
+
+
+
+********** Start of MSG 68.516  Y3d  **********
+unitary SG: 15  k label: Y
+  k =  1.000  0.000  0.000 (conv)   0.500  0.500  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.5000000  0.5000000)
+SU(2):  ( 0.0000000  0.0000000)  (-0.0000000 -1.0000000) 
+        (-0.0000000 -1.0000000)  ( 0.0000000  0.0000000) 
+2-th op 
+O(3):      -1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    0    0
+            0    1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.5000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[-I]]
+2-th op: 
+ [[-1]]
+Antiunitary op:
+ [[1]]
+
+
+Print kp results:
+
+
+==========  Result of msg 68.516  Y3d  order = [1, 1]  ==========
+No symmetry-allowed kp models.
+
+********** End of msg 68.516  Y3d  **********
+
+
+
+********** Start of MSG 68.516  Y4d  **********
+unitary SG: 15  k label: Y
+  k =  1.000  0.000  0.000 (conv)   0.500  0.500  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.5000000  0.5000000)
+SU(2):  ( 0.0000000  0.0000000)  (-0.0000000 -1.0000000) 
+        (-0.0000000 -1.0000000)  ( 0.0000000  0.0000000) 
+2-th op 
+O(3):      -1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    0    0
+            0    1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.5000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[I]]
+2-th op: 
+ [[-1]]
+Antiunitary op:
+ [[1]]
+
+
+Print kp results:
+
+
+==========  Result of msg 68.516  Y4d  order = [1, 1]  ==========
+No symmetry-allowed kp models.
+
+********** End of msg 68.516  Y4d  **********
+
+
+
+********** Start of MSG 68.516  Y5d  **********
+unitary SG: 15  k label: Y
+  k =  1.000  0.000  0.000 (conv)   0.500  0.500  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.5000000  0.5000000)
+SU(2):  ( 0.0000000  0.0000000)  (-0.0000000 -1.0000000) 
+        (-0.0000000 -1.0000000)  ( 0.0000000  0.0000000) 
+2-th op 
+O(3):      -1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    0    0
+            0    1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.5000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[-I]]
+2-th op: 
+ [[1]]
+Antiunitary op:
+ [[1]]
+
+
+Print kp results:
+
+
+==========  Result of msg 68.516  Y5d  order = [1, 1]  ==========
+No symmetry-allowed kp models.
+
+********** End of msg 68.516  Y5d  **********
+
+
+
+********** Start of MSG 68.516  Y6d  **********
+unitary SG: 15  k label: Y
+  k =  1.000  0.000  0.000 (conv)   0.500  0.500  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.5000000  0.5000000)
+SU(2):  ( 0.0000000  0.0000000)  (-0.0000000 -1.0000000) 
+        (-0.0000000 -1.0000000)  ( 0.0000000  0.0000000) 
+2-th op 
+O(3):      -1    0    0
+            0   -1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    0    0
+            0    1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.5000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[I]]
+2-th op: 
+ [[1]]
+Antiunitary op:
+ [[1]]
+
+
+Print kp results:
+
+
+==========  Result of msg 68.516  Y6d  order = [1, 1]  ==========
+No symmetry-allowed kp models.
+
+********** End of msg 68.516  Y6d  **********
+
+========== Finish kp calculation for msg 68.516  kpoint Y ==========
+
+<<<<<<<<<<  Finish calculation of msg 68.516  >>>>>>>>>>

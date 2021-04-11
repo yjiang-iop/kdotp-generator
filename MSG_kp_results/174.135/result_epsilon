@@ -1,0 +1,2619 @@
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+<<<<<<<<<<  Start calculation of msg 174.135  >>>>>>>>>>
+
+========== Start kp calculation for msg 174.135  kpoint A ==========
+
+
+++++++++++  Irreducible linear co-representations of msg 174.135, kpoint A ++++++++++
+unitary SG: 143  k label: A
+  k =  0.000  0.000  0.500 (conv)   0.000  0.000  0.500 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       0   -1    0
+            1   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.5000000  0.8660254)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 0.5000000 -0.8660254) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    1    0
+           -1    0    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.0000000  0.0000000)  ( 0.8660254  0.5000000) 
+        (-0.8660254  0.5000000)  ( 0.0000000  0.0000000) 
+
+
+Representation matrices of generators:
+IR:  GM1  Dim:  1
+1-th op: 
+ [[1]]
+Anti-unitary op: 
+ [[1]]
+
+IR:  GM2_GM3  Dim:  2
+1-th op: 
+ [[-1/2 + sqrt(3)*I/2 0]
+ [0 -1/2 - sqrt(3)*I/2]]
+Anti-unitary op: 
+ [[0 -1/2 + sqrt(3)*I/2]
+ [1 0]]
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+********** Start of MSG 174.135  A1  **********
+unitary SG: 143  k label: A
+  k =  0.000  0.000  0.500 (conv)   0.000  0.000  0.500 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       0   -1    0
+            1   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.5000000  0.8660254)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 0.5000000 -0.8660254) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    1    0
+           -1    0    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.0000000  0.0000000)  ( 0.8660254  0.5000000) 
+        (-0.8660254  0.5000000)  ( 0.0000000  0.0000000) 
+
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[1]]
+Antiunitary op:
+ [[1]]
+
+
+Print kp results:
+
+
+==========  Result of msg 174.135  A1  order = [1]  ==========
+Number of independent kp models: 2
+-----------------------------------------------------
+1-th kp model:
+Matrix([[ex**2 + ex*ey + ey**2]])
+Basis vector: [1, 1, 0, 1, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex**2 + ex*ey + ey**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[ez**2]])
+Basis vector: [0, 0, 0, 0, 0, 1]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ez**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+
+********** End of msg 174.135  A1  **********
+
+
+
+********** Start of MSG 174.135  A2_A3  **********
+unitary SG: 143  k label: A
+  k =  0.000  0.000  0.500 (conv)   0.000  0.000  0.500 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       0   -1    0
+            1   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.5000000  0.8660254)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 0.5000000 -0.8660254) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    1    0
+           -1    0    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.0000000  0.0000000)  ( 0.8660254  0.5000000) 
+        (-0.8660254  0.5000000)  ( 0.0000000  0.0000000) 
+
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[-1/2 + sqrt(3)*I/2 0]
+ [0 -1/2 - sqrt(3)*I/2]]
+Antiunitary op:
+ [[0 -1/2 + sqrt(3)*I/2]
+ [1 0]]
+
+
+Print kp results:
+
+
+==========  Result of msg 174.135  A2_A3  order = [1]  ==========
+Number of independent kp models: 4
+-----------------------------------------------------
+1-th kp model:
+Matrix([[ex**2 + ex*ey + ey**2, 0], [0, ex**2 + ex*ey + ey**2]])
+Basis vector: [1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex**2 + ex*ey + ey**2
+
+Matrix basis:
+Symbol: s_0   Expression: Matrix([[1, 0], [0, 1]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[0, ex**2 + ex*ey + sqrt(3)*I*ex*ey - ey**2/2 + sqrt(3)*I*ey**2/2], [ex**2 + ex*ey - sqrt(3)*I*ex*ey - ey**2/2 - sqrt(3)*I*ey**2/2, 0]])
+Basis vector: [0, 1, 0, 0, 0, 1, -sqrt(3), 0, 0, 0, 0, 0, 0, -1/2, -sqrt(3)/2, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM2_GM3  
+Coefficient basis:
+-sqrt(6)*I*ey*(2*ex + ey)/4 - sqrt(2)*(ex**2 + ex*ey - ey**2/2)/2
+sqrt(6)*ey*(2*ex + ey)/4 + sqrt(2)*I*(ex**2 + ex*ey - ey**2/2)/2
+
+Matrix basis:
+Symbol: -sqrt(2)/2* s_1 + sqrt(2)*I/2* s_2   Expression: Matrix([[0, 0], [-sqrt(2), 0]]) 
+
+Symbol: sqrt(2)*I/2* s_1 + -sqrt(2)/2* s_2   Expression: Matrix([[0, sqrt(2)*I], [0, 0]]) 
+
+-----------------------------------------------------
+3-th kp model:
+Matrix([[0, -I*ex**2 + sqrt(3)*ex*ey - I*ex*ey + sqrt(3)*ey**2/2 + I*ey**2/2], [I*ex**2 + sqrt(3)*ex*ey + I*ex*ey + sqrt(3)*ey**2/2 - I*ey**2/2, 0]])
+Basis vector: [0, 0, 1, 0, 0, sqrt(3), 1, 0, 0, 0, 0, 0, 0, sqrt(3)/2, -1/2, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM2_GM3  
+Coefficient basis:
+-sqrt(6)*ey*(2*ex + ey)/4 + sqrt(2)*I*(ex**2 + ex*ey - ey**2/2)/2
+sqrt(6)*I*ey*(2*ex + ey)/4 - sqrt(2)*(ex**2 + ex*ey - ey**2/2)/2
+
+Matrix basis:
+Symbol: -sqrt(2)/2* s_1 + sqrt(2)*I/2* s_2   Expression: Matrix([[0, 0], [-sqrt(2), 0]]) 
+
+Symbol: sqrt(2)*I/2* s_1 + -sqrt(2)/2* s_2   Expression: Matrix([[0, sqrt(2)*I], [0, 0]]) 
+
+-----------------------------------------------------
+4-th kp model:
+Matrix([[ez**2, 0], [0, ez**2]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ez**2
+
+Matrix basis:
+Symbol: s_0   Expression: Matrix([[1, 0], [0, 1]]) 
+
+-----------------------------------------------------
+
+********** End of msg 174.135  A2_A3  **********
+
+
+
+********** Start of MSG 174.135  A4d  **********
+unitary SG: 143  k label: A
+  k =  0.000  0.000  0.500 (conv)   0.000  0.000  0.500 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       0   -1    0
+            1   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.5000000  0.8660254)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 0.5000000 -0.8660254) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    1    0
+           -1    0    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.0000000  0.0000000)  ( 0.8660254  0.5000000) 
+        (-0.8660254  0.5000000)  ( 0.0000000  0.0000000) 
+
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[-1]]
+Antiunitary op:
+ [[1]]
+
+
+Print kp results:
+
+
+==========  Result of msg 174.135  A4d  order = [1]  ==========
+Number of independent kp models: 2
+-----------------------------------------------------
+1-th kp model:
+Matrix([[ex**2 + ex*ey + ey**2]])
+Basis vector: [1, 1, 0, 1, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex**2 + ex*ey + ey**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[ez**2]])
+Basis vector: [0, 0, 0, 0, 0, 1]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ez**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+
+********** End of msg 174.135  A4d  **********
+
+
+
+********** Start of MSG 174.135  A5d_A6d  **********
+unitary SG: 143  k label: A
+  k =  0.000  0.000  0.500 (conv)   0.000  0.000  0.500 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       0   -1    0
+            1   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.5000000  0.8660254)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 0.5000000 -0.8660254) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    1    0
+           -1    0    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.0000000  0.0000000)  ( 0.8660254  0.5000000) 
+        (-0.8660254  0.5000000)  ( 0.0000000  0.0000000) 
+
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[1/2 - sqrt(3)*I/2 0]
+ [0 1/2 + sqrt(3)*I/2]]
+Antiunitary op:
+ [[0 -1/2 + sqrt(3)*I/2]
+ [1 0]]
+
+
+Print kp results:
+
+
+==========  Result of msg 174.135  A5d_A6d  order = [1]  ==========
+Number of independent kp models: 4
+-----------------------------------------------------
+1-th kp model:
+Matrix([[ex**2 + ex*ey + ey**2, 0], [0, ex**2 + ex*ey + ey**2]])
+Basis vector: [1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex**2 + ex*ey + ey**2
+
+Matrix basis:
+Symbol: s_0   Expression: Matrix([[1, 0], [0, 1]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[0, ex**2 + ex*ey + sqrt(3)*I*ex*ey - ey**2/2 + sqrt(3)*I*ey**2/2], [ex**2 + ex*ey - sqrt(3)*I*ex*ey - ey**2/2 - sqrt(3)*I*ey**2/2, 0]])
+Basis vector: [0, 1, 0, 0, 0, 1, -sqrt(3), 0, 0, 0, 0, 0, 0, -1/2, -sqrt(3)/2, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM2_GM3  
+Coefficient basis:
+-sqrt(6)*I*ey*(2*ex + ey)/4 - sqrt(2)*(ex**2 + ex*ey - ey**2/2)/2
+sqrt(6)*ey*(2*ex + ey)/4 + sqrt(2)*I*(ex**2 + ex*ey - ey**2/2)/2
+
+Matrix basis:
+Symbol: -sqrt(2)/2* s_1 + sqrt(2)*I/2* s_2   Expression: Matrix([[0, 0], [-sqrt(2), 0]]) 
+
+Symbol: sqrt(2)*I/2* s_1 + -sqrt(2)/2* s_2   Expression: Matrix([[0, sqrt(2)*I], [0, 0]]) 
+
+-----------------------------------------------------
+3-th kp model:
+Matrix([[0, -I*ex**2 + sqrt(3)*ex*ey - I*ex*ey + sqrt(3)*ey**2/2 + I*ey**2/2], [I*ex**2 + sqrt(3)*ex*ey + I*ex*ey + sqrt(3)*ey**2/2 - I*ey**2/2, 0]])
+Basis vector: [0, 0, 1, 0, 0, sqrt(3), 1, 0, 0, 0, 0, 0, 0, sqrt(3)/2, -1/2, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM2_GM3  
+Coefficient basis:
+-sqrt(6)*ey*(2*ex + ey)/4 + sqrt(2)*I*(ex**2 + ex*ey - ey**2/2)/2
+sqrt(6)*I*ey*(2*ex + ey)/4 - sqrt(2)*(ex**2 + ex*ey - ey**2/2)/2
+
+Matrix basis:
+Symbol: -sqrt(2)/2* s_1 + sqrt(2)*I/2* s_2   Expression: Matrix([[0, 0], [-sqrt(2), 0]]) 
+
+Symbol: sqrt(2)*I/2* s_1 + -sqrt(2)/2* s_2   Expression: Matrix([[0, sqrt(2)*I], [0, 0]]) 
+
+-----------------------------------------------------
+4-th kp model:
+Matrix([[ez**2, 0], [0, ez**2]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ez**2
+
+Matrix basis:
+Symbol: s_0   Expression: Matrix([[1, 0], [0, 1]]) 
+
+-----------------------------------------------------
+
+********** End of msg 174.135  A5d_A6d  **********
+
+========== Finish kp calculation for msg 174.135  kpoint A ==========
+
+========== Start kp calculation for msg 174.135  kpoint GM ==========
+
+
+++++++++++  Irreducible linear co-representations of msg 174.135, kpoint GM ++++++++++
+unitary SG: 143  k label: GM
+  k =  0.000  0.000  0.000 (conv)   0.000  0.000  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       0   -1    0
+            1   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.5000000  0.8660254)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 0.5000000 -0.8660254) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    1    0
+           -1    0    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.0000000  0.0000000)  ( 0.8660254  0.5000000) 
+        (-0.8660254  0.5000000)  ( 0.0000000  0.0000000) 
+
+
+Representation matrices of generators:
+IR:  GM1  Dim:  1
+1-th op: 
+ [[1]]
+Anti-unitary op: 
+ [[1]]
+
+IR:  GM2_GM3  Dim:  2
+1-th op: 
+ [[-1/2 + sqrt(3)*I/2 0]
+ [0 -1/2 - sqrt(3)*I/2]]
+Anti-unitary op: 
+ [[0 -1/2 + sqrt(3)*I/2]
+ [1 0]]
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+********** Start of MSG 174.135  GM1  **********
+unitary SG: 143  k label: GM
+  k =  0.000  0.000  0.000 (conv)   0.000  0.000  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       0   -1    0
+            1   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.5000000  0.8660254)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 0.5000000 -0.8660254) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    1    0
+           -1    0    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.0000000  0.0000000)  ( 0.8660254  0.5000000) 
+        (-0.8660254  0.5000000)  ( 0.0000000  0.0000000) 
+
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[1]]
+Antiunitary op:
+ [[1]]
+
+
+Print kp results:
+
+
+==========  Result of msg 174.135  GM1  order = [1]  ==========
+Number of independent kp models: 2
+-----------------------------------------------------
+1-th kp model:
+Matrix([[ex**2 + ex*ey + ey**2]])
+Basis vector: [1, 1, 0, 1, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex**2 + ex*ey + ey**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[ez**2]])
+Basis vector: [0, 0, 0, 0, 0, 1]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ez**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+
+********** End of msg 174.135  GM1  **********
+
+
+
+********** Start of MSG 174.135  GM2_GM3  **********
+unitary SG: 143  k label: GM
+  k =  0.000  0.000  0.000 (conv)   0.000  0.000  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       0   -1    0
+            1   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.5000000  0.8660254)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 0.5000000 -0.8660254) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    1    0
+           -1    0    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.0000000  0.0000000)  ( 0.8660254  0.5000000) 
+        (-0.8660254  0.5000000)  ( 0.0000000  0.0000000) 
+
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[-1/2 + sqrt(3)*I/2 0]
+ [0 -1/2 - sqrt(3)*I/2]]
+Antiunitary op:
+ [[0 -1/2 + sqrt(3)*I/2]
+ [1 0]]
+
+
+Print kp results:
+
+
+==========  Result of msg 174.135  GM2_GM3  order = [1]  ==========
+Number of independent kp models: 4
+-----------------------------------------------------
+1-th kp model:
+Matrix([[ex**2 + ex*ey + ey**2, 0], [0, ex**2 + ex*ey + ey**2]])
+Basis vector: [1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex**2 + ex*ey + ey**2
+
+Matrix basis:
+Symbol: s_0   Expression: Matrix([[1, 0], [0, 1]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[0, ex**2 + ex*ey + sqrt(3)*I*ex*ey - ey**2/2 + sqrt(3)*I*ey**2/2], [ex**2 + ex*ey - sqrt(3)*I*ex*ey - ey**2/2 - sqrt(3)*I*ey**2/2, 0]])
+Basis vector: [0, 1, 0, 0, 0, 1, -sqrt(3), 0, 0, 0, 0, 0, 0, -1/2, -sqrt(3)/2, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM2_GM3  
+Coefficient basis:
+-sqrt(6)*I*ey*(2*ex + ey)/4 - sqrt(2)*(ex**2 + ex*ey - ey**2/2)/2
+sqrt(6)*ey*(2*ex + ey)/4 + sqrt(2)*I*(ex**2 + ex*ey - ey**2/2)/2
+
+Matrix basis:
+Symbol: -sqrt(2)/2* s_1 + sqrt(2)*I/2* s_2   Expression: Matrix([[0, 0], [-sqrt(2), 0]]) 
+
+Symbol: sqrt(2)*I/2* s_1 + -sqrt(2)/2* s_2   Expression: Matrix([[0, sqrt(2)*I], [0, 0]]) 
+
+-----------------------------------------------------
+3-th kp model:
+Matrix([[0, -I*ex**2 + sqrt(3)*ex*ey - I*ex*ey + sqrt(3)*ey**2/2 + I*ey**2/2], [I*ex**2 + sqrt(3)*ex*ey + I*ex*ey + sqrt(3)*ey**2/2 - I*ey**2/2, 0]])
+Basis vector: [0, 0, 1, 0, 0, sqrt(3), 1, 0, 0, 0, 0, 0, 0, sqrt(3)/2, -1/2, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM2_GM3  
+Coefficient basis:
+-sqrt(6)*ey*(2*ex + ey)/4 + sqrt(2)*I*(ex**2 + ex*ey - ey**2/2)/2
+sqrt(6)*I*ey*(2*ex + ey)/4 - sqrt(2)*(ex**2 + ex*ey - ey**2/2)/2
+
+Matrix basis:
+Symbol: -sqrt(2)/2* s_1 + sqrt(2)*I/2* s_2   Expression: Matrix([[0, 0], [-sqrt(2), 0]]) 
+
+Symbol: sqrt(2)*I/2* s_1 + -sqrt(2)/2* s_2   Expression: Matrix([[0, sqrt(2)*I], [0, 0]]) 
+
+-----------------------------------------------------
+4-th kp model:
+Matrix([[ez**2, 0], [0, ez**2]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ez**2
+
+Matrix basis:
+Symbol: s_0   Expression: Matrix([[1, 0], [0, 1]]) 
+
+-----------------------------------------------------
+
+********** End of msg 174.135  GM2_GM3  **********
+
+
+
+********** Start of MSG 174.135  GM4d  **********
+unitary SG: 143  k label: GM
+  k =  0.000  0.000  0.000 (conv)   0.000  0.000  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       0   -1    0
+            1   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.5000000  0.8660254)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 0.5000000 -0.8660254) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    1    0
+           -1    0    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.0000000  0.0000000)  ( 0.8660254  0.5000000) 
+        (-0.8660254  0.5000000)  ( 0.0000000  0.0000000) 
+
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[-1]]
+Antiunitary op:
+ [[1]]
+
+
+Print kp results:
+
+
+==========  Result of msg 174.135  GM4d  order = [1]  ==========
+Number of independent kp models: 2
+-----------------------------------------------------
+1-th kp model:
+Matrix([[ex**2 + ex*ey + ey**2]])
+Basis vector: [1, 1, 0, 1, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex**2 + ex*ey + ey**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[ez**2]])
+Basis vector: [0, 0, 0, 0, 0, 1]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ez**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+
+********** End of msg 174.135  GM4d  **********
+
+
+
+********** Start of MSG 174.135  GM5d_GM6d  **********
+unitary SG: 143  k label: GM
+  k =  0.000  0.000  0.000 (conv)   0.000  0.000  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       0   -1    0
+            1   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.5000000  0.8660254)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 0.5000000 -0.8660254) 
+
+
+ Antiunitary_op: Tg
+O(3):      -1    1    0
+           -1    0    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.0000000  0.0000000)  ( 0.8660254  0.5000000) 
+        (-0.8660254  0.5000000)  ( 0.0000000  0.0000000) 
+
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[1/2 - sqrt(3)*I/2 0]
+ [0 1/2 + sqrt(3)*I/2]]
+Antiunitary op:
+ [[0 -1/2 + sqrt(3)*I/2]
+ [1 0]]
+
+
+Print kp results:
+
+
+==========  Result of msg 174.135  GM5d_GM6d  order = [1]  ==========
+Number of independent kp models: 4
+-----------------------------------------------------
+1-th kp model:
+Matrix([[ex**2 + ex*ey + ey**2, 0], [0, ex**2 + ex*ey + ey**2]])
+Basis vector: [1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex**2 + ex*ey + ey**2
+
+Matrix basis:
+Symbol: s_0   Expression: Matrix([[1, 0], [0, 1]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[0, ex**2 + ex*ey + sqrt(3)*I*ex*ey - ey**2/2 + sqrt(3)*I*ey**2/2], [ex**2 + ex*ey - sqrt(3)*I*ex*ey - ey**2/2 - sqrt(3)*I*ey**2/2, 0]])
+Basis vector: [0, 1, 0, 0, 0, 1, -sqrt(3), 0, 0, 0, 0, 0, 0, -1/2, -sqrt(3)/2, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM2_GM3  
+Coefficient basis:
+-sqrt(6)*I*ey*(2*ex + ey)/4 - sqrt(2)*(ex**2 + ex*ey - ey**2/2)/2
+sqrt(6)*ey*(2*ex + ey)/4 + sqrt(2)*I*(ex**2 + ex*ey - ey**2/2)/2
+
+Matrix basis:
+Symbol: -sqrt(2)/2* s_1 + sqrt(2)*I/2* s_2   Expression: Matrix([[0, 0], [-sqrt(2), 0]]) 
+
+Symbol: sqrt(2)*I/2* s_1 + -sqrt(2)/2* s_2   Expression: Matrix([[0, sqrt(2)*I], [0, 0]]) 
+
+-----------------------------------------------------
+3-th kp model:
+Matrix([[0, -I*ex**2 + sqrt(3)*ex*ey - I*ex*ey + sqrt(3)*ey**2/2 + I*ey**2/2], [I*ex**2 + sqrt(3)*ex*ey + I*ex*ey + sqrt(3)*ey**2/2 - I*ey**2/2, 0]])
+Basis vector: [0, 0, 1, 0, 0, sqrt(3), 1, 0, 0, 0, 0, 0, 0, sqrt(3)/2, -1/2, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM2_GM3  
+Coefficient basis:
+-sqrt(6)*ey*(2*ex + ey)/4 + sqrt(2)*I*(ex**2 + ex*ey - ey**2/2)/2
+sqrt(6)*I*ey*(2*ex + ey)/4 - sqrt(2)*(ex**2 + ex*ey - ey**2/2)/2
+
+Matrix basis:
+Symbol: -sqrt(2)/2* s_1 + sqrt(2)*I/2* s_2   Expression: Matrix([[0, 0], [-sqrt(2), 0]]) 
+
+Symbol: sqrt(2)*I/2* s_1 + -sqrt(2)/2* s_2   Expression: Matrix([[0, sqrt(2)*I], [0, 0]]) 
+
+-----------------------------------------------------
+4-th kp model:
+Matrix([[ez**2, 0], [0, ez**2]])
+Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ez**2
+
+Matrix basis:
+Symbol: s_0   Expression: Matrix([[1, 0], [0, 1]]) 
+
+-----------------------------------------------------
+
+********** End of msg 174.135  GM5d_GM6d  **********
+
+========== Finish kp calculation for msg 174.135  kpoint GM ==========
+
+========== Start kp calculation for msg 174.135  kpoint HA ==========
+
+
+++++++++++  Irreducible linear co-representations of msg 174.135, kpoint HA ++++++++++
+unitary SG: 143  k label: HA
+  k = -0.330 -0.330 -0.500 (conv)  -0.330 -0.330 -0.500 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       0   -1    0
+            1   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.5000000  0.8660254)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 0.5000000 -0.8660254) 
+
+
+ Antiunitary op: not exist
+
+Representation matrices of generators:
+IR:  GM1  Dim:  1
+1-th op: 
+ [[1]]
+
+IR:  GM2  Dim:  1
+1-th op: 
+ [[-1/2 + sqrt(3)*I/2]]
+
+IR:  GM3  Dim:  1
+1-th op: 
+ [[-1/2 - sqrt(3)*I/2]]
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+********** Start of MSG 174.135  HA1  **********
+unitary SG: 143  k label: HA
+  k = -0.330 -0.330 -0.500 (conv)  -0.330 -0.330 -0.500 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       0   -1    0
+            1   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.5000000  0.8660254)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 0.5000000 -0.8660254) 
+
+
+ Antiunitary op: not exist
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[1]]
+
+
+Print kp results:
+
+
+==========  Result of msg 174.135  HA1  order = [1]  ==========
+Number of independent kp models: 2
+-----------------------------------------------------
+1-th kp model:
+Matrix([[ex**2 + ex*ey + ey**2]])
+Basis vector: [1, 1, 0, 1, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex**2 + ex*ey + ey**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[ez**2]])
+Basis vector: [0, 0, 0, 0, 0, 1]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ez**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+
+********** End of msg 174.135  HA1  **********
+
+
+
+********** Start of MSG 174.135  HA2  **********
+unitary SG: 143  k label: HA
+  k = -0.330 -0.330 -0.500 (conv)  -0.330 -0.330 -0.500 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       0   -1    0
+            1   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.5000000  0.8660254)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 0.5000000 -0.8660254) 
+
+
+ Antiunitary op: not exist
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[-1/2 - sqrt(3)*I/2]]
+
+
+Print kp results:
+
+
+==========  Result of msg 174.135  HA2  order = [1]  ==========
+Number of independent kp models: 2
+-----------------------------------------------------
+1-th kp model:
+Matrix([[ex**2 + ex*ey + ey**2]])
+Basis vector: [1, 1, 0, 1, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex**2 + ex*ey + ey**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[ez**2]])
+Basis vector: [0, 0, 0, 0, 0, 1]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ez**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+
+********** End of msg 174.135  HA2  **********
+
+
+
+********** Start of MSG 174.135  HA3  **********
+unitary SG: 143  k label: HA
+  k = -0.330 -0.330 -0.500 (conv)  -0.330 -0.330 -0.500 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       0   -1    0
+            1   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.5000000  0.8660254)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 0.5000000 -0.8660254) 
+
+
+ Antiunitary op: not exist
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[-1/2 + sqrt(3)*I/2]]
+
+
+Print kp results:
+
+
+==========  Result of msg 174.135  HA3  order = [1]  ==========
+Number of independent kp models: 2
+-----------------------------------------------------
+1-th kp model:
+Matrix([[ex**2 + ex*ey + ey**2]])
+Basis vector: [1, 1, 0, 1, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex**2 + ex*ey + ey**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[ez**2]])
+Basis vector: [0, 0, 0, 0, 0, 1]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ez**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+
+********** End of msg 174.135  HA3  **********
+
+
+
+********** Start of MSG 174.135  HA4d  **********
+unitary SG: 143  k label: HA
+  k = -0.330 -0.330 -0.500 (conv)  -0.330 -0.330 -0.500 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       0   -1    0
+            1   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.5000000  0.8660254)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 0.5000000 -0.8660254) 
+
+
+ Antiunitary op: not exist
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[-1]]
+
+
+Print kp results:
+
+
+==========  Result of msg 174.135  HA4d  order = [1]  ==========
+Number of independent kp models: 2
+-----------------------------------------------------
+1-th kp model:
+Matrix([[ex**2 + ex*ey + ey**2]])
+Basis vector: [1, 1, 0, 1, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex**2 + ex*ey + ey**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[ez**2]])
+Basis vector: [0, 0, 0, 0, 0, 1]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ez**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+
+********** End of msg 174.135  HA4d  **********
+
+
+
+********** Start of MSG 174.135  HA5d  **********
+unitary SG: 143  k label: HA
+  k = -0.330 -0.330 -0.500 (conv)  -0.330 -0.330 -0.500 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       0   -1    0
+            1   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.5000000  0.8660254)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 0.5000000 -0.8660254) 
+
+
+ Antiunitary op: not exist
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[1/2 + sqrt(3)*I/2]]
+
+
+Print kp results:
+
+
+==========  Result of msg 174.135  HA5d  order = [1]  ==========
+Number of independent kp models: 2
+-----------------------------------------------------
+1-th kp model:
+Matrix([[ex**2 + ex*ey + ey**2]])
+Basis vector: [1, 1, 0, 1, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex**2 + ex*ey + ey**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[ez**2]])
+Basis vector: [0, 0, 0, 0, 0, 1]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ez**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+
+********** End of msg 174.135  HA5d  **********
+
+
+
+********** Start of MSG 174.135  HA6d  **********
+unitary SG: 143  k label: HA
+  k = -0.330 -0.330 -0.500 (conv)  -0.330 -0.330 -0.500 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       0   -1    0
+            1   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.5000000  0.8660254)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 0.5000000 -0.8660254) 
+
+
+ Antiunitary op: not exist
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[1/2 - sqrt(3)*I/2]]
+
+
+Print kp results:
+
+
+==========  Result of msg 174.135  HA6d  order = [1]  ==========
+Number of independent kp models: 2
+-----------------------------------------------------
+1-th kp model:
+Matrix([[ex**2 + ex*ey + ey**2]])
+Basis vector: [1, 1, 0, 1, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex**2 + ex*ey + ey**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[ez**2]])
+Basis vector: [0, 0, 0, 0, 0, 1]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ez**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+
+********** End of msg 174.135  HA6d  **********
+
+========== Finish kp calculation for msg 174.135  kpoint HA ==========
+
+========== Start kp calculation for msg 174.135  kpoint H ==========
+
+
+++++++++++  Irreducible linear co-representations of msg 174.135, kpoint H ++++++++++
+unitary SG: 143  k label: H
+  k =  0.330  0.330  0.500 (conv)   0.330  0.330  0.500 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       0   -1    0
+            1   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.5000000  0.8660254)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 0.5000000 -0.8660254) 
+
+
+ Antiunitary op: not exist
+
+Representation matrices of generators:
+IR:  GM1  Dim:  1
+1-th op: 
+ [[1]]
+
+IR:  GM2  Dim:  1
+1-th op: 
+ [[-1/2 + sqrt(3)*I/2]]
+
+IR:  GM3  Dim:  1
+1-th op: 
+ [[-1/2 - sqrt(3)*I/2]]
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+********** Start of MSG 174.135  H1  **********
+unitary SG: 143  k label: H
+  k =  0.330  0.330  0.500 (conv)   0.330  0.330  0.500 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       0   -1    0
+            1   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.5000000  0.8660254)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 0.5000000 -0.8660254) 
+
+
+ Antiunitary op: not exist
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[1]]
+
+
+Print kp results:
+
+
+==========  Result of msg 174.135  H1  order = [1]  ==========
+Number of independent kp models: 2
+-----------------------------------------------------
+1-th kp model:
+Matrix([[ex**2 + ex*ey + ey**2]])
+Basis vector: [1, 1, 0, 1, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex**2 + ex*ey + ey**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[ez**2]])
+Basis vector: [0, 0, 0, 0, 0, 1]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ez**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+
+********** End of msg 174.135  H1  **********
+
+
+
+********** Start of MSG 174.135  H2  **********
+unitary SG: 143  k label: H
+  k =  0.330  0.330  0.500 (conv)   0.330  0.330  0.500 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       0   -1    0
+            1   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.5000000  0.8660254)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 0.5000000 -0.8660254) 
+
+
+ Antiunitary op: not exist
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[-1/2 + sqrt(3)*I/2]]
+
+
+Print kp results:
+
+
+==========  Result of msg 174.135  H2  order = [1]  ==========
+Number of independent kp models: 2
+-----------------------------------------------------
+1-th kp model:
+Matrix([[ex**2 + ex*ey + ey**2]])
+Basis vector: [1, 1, 0, 1, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex**2 + ex*ey + ey**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[ez**2]])
+Basis vector: [0, 0, 0, 0, 0, 1]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ez**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+
+********** End of msg 174.135  H2  **********
+
+
+
+********** Start of MSG 174.135  H3  **********
+unitary SG: 143  k label: H
+  k =  0.330  0.330  0.500 (conv)   0.330  0.330  0.500 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       0   -1    0
+            1   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.5000000  0.8660254)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 0.5000000 -0.8660254) 
+
+
+ Antiunitary op: not exist
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[-1/2 - sqrt(3)*I/2]]
+
+
+Print kp results:
+
+
+==========  Result of msg 174.135  H3  order = [1]  ==========
+Number of independent kp models: 2
+-----------------------------------------------------
+1-th kp model:
+Matrix([[ex**2 + ex*ey + ey**2]])
+Basis vector: [1, 1, 0, 1, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex**2 + ex*ey + ey**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[ez**2]])
+Basis vector: [0, 0, 0, 0, 0, 1]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ez**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+
+********** End of msg 174.135  H3  **********
+
+
+
+********** Start of MSG 174.135  H4d  **********
+unitary SG: 143  k label: H
+  k =  0.330  0.330  0.500 (conv)   0.330  0.330  0.500 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       0   -1    0
+            1   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.5000000  0.8660254)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 0.5000000 -0.8660254) 
+
+
+ Antiunitary op: not exist
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[-1]]
+
+
+Print kp results:
+
+
+==========  Result of msg 174.135  H4d  order = [1]  ==========
+Number of independent kp models: 2
+-----------------------------------------------------
+1-th kp model:
+Matrix([[ex**2 + ex*ey + ey**2]])
+Basis vector: [1, 1, 0, 1, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex**2 + ex*ey + ey**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[ez**2]])
+Basis vector: [0, 0, 0, 0, 0, 1]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ez**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+
+********** End of msg 174.135  H4d  **********
+
+
+
+********** Start of MSG 174.135  H5d  **********
+unitary SG: 143  k label: H
+  k =  0.330  0.330  0.500 (conv)   0.330  0.330  0.500 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       0   -1    0
+            1   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.5000000  0.8660254)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 0.5000000 -0.8660254) 
+
+
+ Antiunitary op: not exist
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[1/2 - sqrt(3)*I/2]]
+
+
+Print kp results:
+
+
+==========  Result of msg 174.135  H5d  order = [1]  ==========
+Number of independent kp models: 2
+-----------------------------------------------------
+1-th kp model:
+Matrix([[ex**2 + ex*ey + ey**2]])
+Basis vector: [1, 1, 0, 1, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex**2 + ex*ey + ey**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[ez**2]])
+Basis vector: [0, 0, 0, 0, 0, 1]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ez**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+
+********** End of msg 174.135  H5d  **********
+
+
+
+********** Start of MSG 174.135  H6d  **********
+unitary SG: 143  k label: H
+  k =  0.330  0.330  0.500 (conv)   0.330  0.330  0.500 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       0   -1    0
+            1   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.5000000  0.8660254)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 0.5000000 -0.8660254) 
+
+
+ Antiunitary op: not exist
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[1/2 + sqrt(3)*I/2]]
+
+
+Print kp results:
+
+
+==========  Result of msg 174.135  H6d  order = [1]  ==========
+Number of independent kp models: 2
+-----------------------------------------------------
+1-th kp model:
+Matrix([[ex**2 + ex*ey + ey**2]])
+Basis vector: [1, 1, 0, 1, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex**2 + ex*ey + ey**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[ez**2]])
+Basis vector: [0, 0, 0, 0, 0, 1]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ez**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+
+********** End of msg 174.135  H6d  **********
+
+========== Finish kp calculation for msg 174.135  kpoint H ==========
+
+========== Start kp calculation for msg 174.135  kpoint KA ==========
+
+
+++++++++++  Irreducible linear co-representations of msg 174.135, kpoint KA ++++++++++
+unitary SG: 143  k label: KA
+  k = -0.330 -0.330  0.000 (conv)  -0.330 -0.330  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       0   -1    0
+            1   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.5000000  0.8660254)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 0.5000000 -0.8660254) 
+
+
+ Antiunitary op: not exist
+
+Representation matrices of generators:
+IR:  GM1  Dim:  1
+1-th op: 
+ [[1]]
+
+IR:  GM2  Dim:  1
+1-th op: 
+ [[-1/2 + sqrt(3)*I/2]]
+
+IR:  GM3  Dim:  1
+1-th op: 
+ [[-1/2 - sqrt(3)*I/2]]
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+********** Start of MSG 174.135  KA1  **********
+unitary SG: 143  k label: KA
+  k = -0.330 -0.330  0.000 (conv)  -0.330 -0.330  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       0   -1    0
+            1   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.5000000  0.8660254)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 0.5000000 -0.8660254) 
+
+
+ Antiunitary op: not exist
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[1]]
+
+
+Print kp results:
+
+
+==========  Result of msg 174.135  KA1  order = [1]  ==========
+Number of independent kp models: 2
+-----------------------------------------------------
+1-th kp model:
+Matrix([[ex**2 + ex*ey + ey**2]])
+Basis vector: [1, 1, 0, 1, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex**2 + ex*ey + ey**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[ez**2]])
+Basis vector: [0, 0, 0, 0, 0, 1]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ez**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+
+********** End of msg 174.135  KA1  **********
+
+
+
+********** Start of MSG 174.135  KA2  **********
+unitary SG: 143  k label: KA
+  k = -0.330 -0.330  0.000 (conv)  -0.330 -0.330  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       0   -1    0
+            1   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.5000000  0.8660254)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 0.5000000 -0.8660254) 
+
+
+ Antiunitary op: not exist
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[-1/2 - sqrt(3)*I/2]]
+
+
+Print kp results:
+
+
+==========  Result of msg 174.135  KA2  order = [1]  ==========
+Number of independent kp models: 2
+-----------------------------------------------------
+1-th kp model:
+Matrix([[ex**2 + ex*ey + ey**2]])
+Basis vector: [1, 1, 0, 1, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex**2 + ex*ey + ey**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[ez**2]])
+Basis vector: [0, 0, 0, 0, 0, 1]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ez**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+
+********** End of msg 174.135  KA2  **********
+
+
+
+********** Start of MSG 174.135  KA3  **********
+unitary SG: 143  k label: KA
+  k = -0.330 -0.330  0.000 (conv)  -0.330 -0.330  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       0   -1    0
+            1   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.5000000  0.8660254)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 0.5000000 -0.8660254) 
+
+
+ Antiunitary op: not exist
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[-1/2 + sqrt(3)*I/2]]
+
+
+Print kp results:
+
+
+==========  Result of msg 174.135  KA3  order = [1]  ==========
+Number of independent kp models: 2
+-----------------------------------------------------
+1-th kp model:
+Matrix([[ex**2 + ex*ey + ey**2]])
+Basis vector: [1, 1, 0, 1, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex**2 + ex*ey + ey**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[ez**2]])
+Basis vector: [0, 0, 0, 0, 0, 1]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ez**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+
+********** End of msg 174.135  KA3  **********
+
+
+
+********** Start of MSG 174.135  KA4d  **********
+unitary SG: 143  k label: KA
+  k = -0.330 -0.330  0.000 (conv)  -0.330 -0.330  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       0   -1    0
+            1   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.5000000  0.8660254)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 0.5000000 -0.8660254) 
+
+
+ Antiunitary op: not exist
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[-1]]
+
+
+Print kp results:
+
+
+==========  Result of msg 174.135  KA4d  order = [1]  ==========
+Number of independent kp models: 2
+-----------------------------------------------------
+1-th kp model:
+Matrix([[ex**2 + ex*ey + ey**2]])
+Basis vector: [1, 1, 0, 1, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex**2 + ex*ey + ey**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[ez**2]])
+Basis vector: [0, 0, 0, 0, 0, 1]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ez**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+
+********** End of msg 174.135  KA4d  **********
+
+
+
+********** Start of MSG 174.135  KA5d  **********
+unitary SG: 143  k label: KA
+  k = -0.330 -0.330  0.000 (conv)  -0.330 -0.330  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       0   -1    0
+            1   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.5000000  0.8660254)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 0.5000000 -0.8660254) 
+
+
+ Antiunitary op: not exist
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[1/2 + sqrt(3)*I/2]]
+
+
+Print kp results:
+
+
+==========  Result of msg 174.135  KA5d  order = [1]  ==========
+Number of independent kp models: 2
+-----------------------------------------------------
+1-th kp model:
+Matrix([[ex**2 + ex*ey + ey**2]])
+Basis vector: [1, 1, 0, 1, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex**2 + ex*ey + ey**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[ez**2]])
+Basis vector: [0, 0, 0, 0, 0, 1]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ez**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+
+********** End of msg 174.135  KA5d  **********
+
+
+
+********** Start of MSG 174.135  KA6d  **********
+unitary SG: 143  k label: KA
+  k = -0.330 -0.330  0.000 (conv)  -0.330 -0.330  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       0   -1    0
+            1   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.5000000  0.8660254)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 0.5000000 -0.8660254) 
+
+
+ Antiunitary op: not exist
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[1/2 - sqrt(3)*I/2]]
+
+
+Print kp results:
+
+
+==========  Result of msg 174.135  KA6d  order = [1]  ==========
+Number of independent kp models: 2
+-----------------------------------------------------
+1-th kp model:
+Matrix([[ex**2 + ex*ey + ey**2]])
+Basis vector: [1, 1, 0, 1, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex**2 + ex*ey + ey**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[ez**2]])
+Basis vector: [0, 0, 0, 0, 0, 1]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ez**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+
+********** End of msg 174.135  KA6d  **********
+
+========== Finish kp calculation for msg 174.135  kpoint KA ==========
+
+========== Start kp calculation for msg 174.135  kpoint K ==========
+
+
+++++++++++  Irreducible linear co-representations of msg 174.135, kpoint K ++++++++++
+unitary SG: 143  k label: K
+  k =  0.330  0.330  0.000 (conv)   0.330  0.330  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       0   -1    0
+            1   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.5000000  0.8660254)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 0.5000000 -0.8660254) 
+
+
+ Antiunitary op: not exist
+
+Representation matrices of generators:
+IR:  GM1  Dim:  1
+1-th op: 
+ [[1]]
+
+IR:  GM2  Dim:  1
+1-th op: 
+ [[-1/2 + sqrt(3)*I/2]]
+
+IR:  GM3  Dim:  1
+1-th op: 
+ [[-1/2 - sqrt(3)*I/2]]
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+********** Start of MSG 174.135  K1  **********
+unitary SG: 143  k label: K
+  k =  0.330  0.330  0.000 (conv)   0.330  0.330  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       0   -1    0
+            1   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.5000000  0.8660254)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 0.5000000 -0.8660254) 
+
+
+ Antiunitary op: not exist
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[1]]
+
+
+Print kp results:
+
+
+==========  Result of msg 174.135  K1  order = [1]  ==========
+Number of independent kp models: 2
+-----------------------------------------------------
+1-th kp model:
+Matrix([[ex**2 + ex*ey + ey**2]])
+Basis vector: [1, 1, 0, 1, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex**2 + ex*ey + ey**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[ez**2]])
+Basis vector: [0, 0, 0, 0, 0, 1]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ez**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+
+********** End of msg 174.135  K1  **********
+
+
+
+********** Start of MSG 174.135  K2  **********
+unitary SG: 143  k label: K
+  k =  0.330  0.330  0.000 (conv)   0.330  0.330  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       0   -1    0
+            1   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.5000000  0.8660254)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 0.5000000 -0.8660254) 
+
+
+ Antiunitary op: not exist
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[-1/2 + sqrt(3)*I/2]]
+
+
+Print kp results:
+
+
+==========  Result of msg 174.135  K2  order = [1]  ==========
+Number of independent kp models: 2
+-----------------------------------------------------
+1-th kp model:
+Matrix([[ex**2 + ex*ey + ey**2]])
+Basis vector: [1, 1, 0, 1, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex**2 + ex*ey + ey**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[ez**2]])
+Basis vector: [0, 0, 0, 0, 0, 1]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ez**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+
+********** End of msg 174.135  K2  **********
+
+
+
+********** Start of MSG 174.135  K3  **********
+unitary SG: 143  k label: K
+  k =  0.330  0.330  0.000 (conv)   0.330  0.330  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       0   -1    0
+            1   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.5000000  0.8660254)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 0.5000000 -0.8660254) 
+
+
+ Antiunitary op: not exist
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[-1/2 - sqrt(3)*I/2]]
+
+
+Print kp results:
+
+
+==========  Result of msg 174.135  K3  order = [1]  ==========
+Number of independent kp models: 2
+-----------------------------------------------------
+1-th kp model:
+Matrix([[ex**2 + ex*ey + ey**2]])
+Basis vector: [1, 1, 0, 1, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex**2 + ex*ey + ey**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[ez**2]])
+Basis vector: [0, 0, 0, 0, 0, 1]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ez**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+
+********** End of msg 174.135  K3  **********
+
+
+
+********** Start of MSG 174.135  K4d  **********
+unitary SG: 143  k label: K
+  k =  0.330  0.330  0.000 (conv)   0.330  0.330  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       0   -1    0
+            1   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.5000000  0.8660254)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 0.5000000 -0.8660254) 
+
+
+ Antiunitary op: not exist
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[-1]]
+
+
+Print kp results:
+
+
+==========  Result of msg 174.135  K4d  order = [1]  ==========
+Number of independent kp models: 2
+-----------------------------------------------------
+1-th kp model:
+Matrix([[ex**2 + ex*ey + ey**2]])
+Basis vector: [1, 1, 0, 1, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex**2 + ex*ey + ey**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[ez**2]])
+Basis vector: [0, 0, 0, 0, 0, 1]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ez**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+
+********** End of msg 174.135  K4d  **********
+
+
+
+********** Start of MSG 174.135  K5d  **********
+unitary SG: 143  k label: K
+  k =  0.330  0.330  0.000 (conv)   0.330  0.330  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       0   -1    0
+            1   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.5000000  0.8660254)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 0.5000000 -0.8660254) 
+
+
+ Antiunitary op: not exist
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[1/2 - sqrt(3)*I/2]]
+
+
+Print kp results:
+
+
+==========  Result of msg 174.135  K5d  order = [1]  ==========
+Number of independent kp models: 2
+-----------------------------------------------------
+1-th kp model:
+Matrix([[ex**2 + ex*ey + ey**2]])
+Basis vector: [1, 1, 0, 1, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex**2 + ex*ey + ey**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[ez**2]])
+Basis vector: [0, 0, 0, 0, 0, 1]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ez**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+
+********** End of msg 174.135  K5d  **********
+
+
+
+********** Start of MSG 174.135  K6d  **********
+unitary SG: 143  k label: K
+  k =  0.330  0.330  0.000 (conv)   0.330  0.330  0.000 (prim) 
+ Unitary op generators:
+1-th op 
+O(3):       0   -1    0
+            1   -1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.5000000  0.8660254)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 0.5000000 -0.8660254) 
+
+
+ Antiunitary op: not exist
+
+Irreducible co-representation matrices of generators:
+1-th op: 
+ [[1/2 + sqrt(3)*I/2]]
+
+
+Print kp results:
+
+
+==========  Result of msg 174.135  K6d  order = [1]  ==========
+Number of independent kp models: 2
+-----------------------------------------------------
+1-th kp model:
+Matrix([[ex**2 + ex*ey + ey**2]])
+Basis vector: [1, 1, 0, 1, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex**2 + ex*ey + ey**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[ez**2]])
+Basis vector: [0, 0, 0, 0, 0, 1]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ez**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+
+********** End of msg 174.135  K6d  **********
+
+========== Finish kp calculation for msg 174.135  kpoint K ==========
+
+========== Start kp calculation for msg 174.135  kpoint L ==========
+
+
+++++++++++  Irreducible linear co-representations of msg 174.135, kpoint L ++++++++++
+unitary SG: 143  k label: L
+  k =  0.500  0.000  0.500 (conv)   0.500  0.000  0.500 (prim) 
+ Unitary op generators:
+0-th op 
+O(3):       1    0    0
+            0    1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+ Antiunitary_op: Tg
+O(3):       1    0    0
+            0    1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.0000000  0.0000000)  ( 0.0000000  1.0000000) 
+        ( 0.0000000  1.0000000)  ( 0.0000000  0.0000000) 
+
+
+Representation matrices of generators:
+IR:  GM1  Dim:  1
+0-th op: 
+ [[1]]
+Anti-unitary op: 
+ [[1]]
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+********** Start of MSG 174.135  L1  **********
+unitary SG: 143  k label: L
+  k =  0.500  0.000  0.500 (conv)   0.500  0.000  0.500 (prim) 
+ Unitary op generators:
+0-th op 
+O(3):       1    0    0
+            0    1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+ Antiunitary_op: Tg
+O(3):       1    0    0
+            0    1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.0000000  0.0000000)  ( 0.0000000  1.0000000) 
+        ( 0.0000000  1.0000000)  ( 0.0000000  0.0000000) 
+
+
+Irreducible co-representation matrices of generators:
+0-th op: 
+ [[1]]
+Antiunitary op:
+ [[1]]
+
+
+Print kp results:
+
+
+==========  Result of msg 174.135  L1  order = [1]  ==========
+Number of independent kp models: 4
+-----------------------------------------------------
+1-th kp model:
+Matrix([[ex**2]])
+Basis vector: [1, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[ex*ey]])
+Basis vector: [0, 1, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex*ey
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+3-th kp model:
+Matrix([[ey**2]])
+Basis vector: [0, 0, 0, 1, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ey**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+4-th kp model:
+Matrix([[ez**2]])
+Basis vector: [0, 0, 0, 0, 0, 1]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ez**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+
+********** End of msg 174.135  L1  **********
+
+
+
+********** Start of MSG 174.135  L2d  **********
+unitary SG: 143  k label: L
+  k =  0.500  0.000  0.500 (conv)   0.500  0.000  0.500 (prim) 
+ Unitary op generators:
+0-th op 
+O(3):       1    0    0
+            0    1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+ Antiunitary_op: Tg
+O(3):       1    0    0
+            0    1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.0000000  0.0000000)  ( 0.0000000  1.0000000) 
+        ( 0.0000000  1.0000000)  ( 0.0000000  0.0000000) 
+
+
+Irreducible co-representation matrices of generators:
+0-th op: 
+ [[1]]
+Antiunitary op:
+ [[1]]
+
+
+Print kp results:
+
+
+==========  Result of msg 174.135  L2d  order = [1]  ==========
+Number of independent kp models: 4
+-----------------------------------------------------
+1-th kp model:
+Matrix([[ex**2]])
+Basis vector: [1, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[ex*ey]])
+Basis vector: [0, 1, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex*ey
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+3-th kp model:
+Matrix([[ey**2]])
+Basis vector: [0, 0, 0, 1, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ey**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+4-th kp model:
+Matrix([[ez**2]])
+Basis vector: [0, 0, 0, 0, 0, 1]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ez**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+
+********** End of msg 174.135  L2d  **********
+
+========== Finish kp calculation for msg 174.135  kpoint L ==========
+
+========== Start kp calculation for msg 174.135  kpoint M ==========
+
+
+++++++++++  Irreducible linear co-representations of msg 174.135, kpoint M ++++++++++
+unitary SG: 143  k label: M
+  k =  0.500  0.000  0.000 (conv)   0.500  0.000  0.000 (prim) 
+ Unitary op generators:
+0-th op 
+O(3):       1    0    0
+            0    1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+ Antiunitary_op: Tg
+O(3):       1    0    0
+            0    1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.0000000  0.0000000)  ( 0.0000000  1.0000000) 
+        ( 0.0000000  1.0000000)  ( 0.0000000  0.0000000) 
+
+
+Representation matrices of generators:
+IR:  GM1  Dim:  1
+0-th op: 
+ [[1]]
+Anti-unitary op: 
+ [[1]]
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+********** Start of MSG 174.135  M1  **********
+unitary SG: 143  k label: M
+  k =  0.500  0.000  0.000 (conv)   0.500  0.000  0.000 (prim) 
+ Unitary op generators:
+0-th op 
+O(3):       1    0    0
+            0    1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+ Antiunitary_op: Tg
+O(3):       1    0    0
+            0    1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.0000000  0.0000000)  ( 0.0000000  1.0000000) 
+        ( 0.0000000  1.0000000)  ( 0.0000000  0.0000000) 
+
+
+Irreducible co-representation matrices of generators:
+0-th op: 
+ [[1]]
+Antiunitary op:
+ [[1]]
+
+
+Print kp results:
+
+
+==========  Result of msg 174.135  M1  order = [1]  ==========
+Number of independent kp models: 4
+-----------------------------------------------------
+1-th kp model:
+Matrix([[ex**2]])
+Basis vector: [1, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[ex*ey]])
+Basis vector: [0, 1, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex*ey
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+3-th kp model:
+Matrix([[ey**2]])
+Basis vector: [0, 0, 0, 1, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ey**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+4-th kp model:
+Matrix([[ez**2]])
+Basis vector: [0, 0, 0, 0, 0, 1]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ez**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+
+********** End of msg 174.135  M1  **********
+
+
+
+********** Start of MSG 174.135  M2d  **********
+unitary SG: 143  k label: M
+  k =  0.500  0.000  0.000 (conv)   0.500  0.000  0.000 (prim) 
+ Unitary op generators:
+0-th op 
+O(3):       1    0    0
+            0    1    0
+            0    0    1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 1.0000000  0.0000000)  ( 0.0000000  0.0000000) 
+        ( 0.0000000  0.0000000)  ( 1.0000000  0.0000000) 
+
+
+ Antiunitary_op: Tg
+O(3):       1    0    0
+            0    1    0
+            0    0   -1
+tau:    ( 0.0000000  0.0000000  0.0000000)
+SU(2):  ( 0.0000000  0.0000000)  ( 0.0000000  1.0000000) 
+        ( 0.0000000  1.0000000)  ( 0.0000000  0.0000000) 
+
+
+Irreducible co-representation matrices of generators:
+0-th op: 
+ [[1]]
+Antiunitary op:
+ [[1]]
+
+
+Print kp results:
+
+
+==========  Result of msg 174.135  M2d  order = [1]  ==========
+Number of independent kp models: 4
+-----------------------------------------------------
+1-th kp model:
+Matrix([[ex**2]])
+Basis vector: [1, 0, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+2-th kp model:
+Matrix([[ex*ey]])
+Basis vector: [0, 1, 0, 0, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ex*ey
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+3-th kp model:
+Matrix([[ey**2]])
+Basis vector: [0, 0, 0, 1, 0, 0]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ey**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+4-th kp model:
+Matrix([[ez**2]])
+Basis vector: [0, 0, 0, 0, 0, 1]
+
+Decomposed basis using linear IR: 1 GM1  
+Coefficient basis:
+ez**2
+
+Matrix basis:
+Symbol: Identity   Expression: Matrix([[1]]) 
+
+-----------------------------------------------------
+
+********** End of msg 174.135  M2d  **********
+
+========== Finish kp calculation for msg 174.135  kpoint M ==========
+
+<<<<<<<<<<  Finish calculation of msg 174.135  >>>>>>>>>>
