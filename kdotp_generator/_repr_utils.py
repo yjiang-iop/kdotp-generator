@@ -111,6 +111,7 @@ def hermitian_pauli_basis(dim):
        #raise ValueError('input dim not supported!')
         return hermitian_basis(dim)
 
+@export
 def hermitian_pauli_basis_symbols(dim):
     '''
     Returns a list of the symbols of hermitian pauli matrices (or Gellmann matrics) of size ``dim``, e.g 's0 * s1 '
