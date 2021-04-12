@@ -194,8 +194,6 @@ def irrep_to_linear_irrep(irmat_gen, k_dict, symmetry_operations):
                 raise ValueError('mat appear in array more than once!', mat, array)
         
         rotC = k_dict['rotC'][0:len(k_dict['rotC'])]
-       #element_set = [ rotC[ii] for ii in k_dict['generators'] ]
-       #irmat_full = [ irmat[ii] for ii in range(len(k_dict['generators'])) ] 
         un_rot_set, un_rep_set, au_rot_set, au_rep_set = [], [], [], []
         for isym, sym_op in enumerate(symmetry_operations):
             if sym_op.repr.has_cc:
@@ -281,22 +279,20 @@ def irrep_to_linear_irrep(irmat_gen, k_dict, symmetry_operations):
     irmat_all = generate_all_irmat(irmat_gen, k_dict, symmetry_operations)
     linear_ir_vec, linear_irmat = identify_linear_irrep(irmat_all, k_dict)
     linear_ir_str = reduce(lambda x,y: x+y, [ str(nir) + ' ' + k_dict['coirreps'][ir]['label'] + '  ' for ir, nir in enumerate(linear_ir_vec) if nir > 0])
-   #print(linear_ir_str)
-    linear_ir_dim = [ k_dict['coirreps'][ir]['dim'] for ir, nir in enumerate(linear_ir_vec) if nir > 0 ]
-    nir_vec = [ nir for nir in linear_ir_vec if nir > 0 ]
     try:
         similarity_mat = find_similarity_transformation(irmat_all, linear_irmat)
     except:
+        linear_ir_dim = [ k_dict['coirreps'][ir]['dim'] for ir, nir in enumerate(linear_ir_vec) if nir > 0 ]
+        nir_vec = [ nir for nir in linear_ir_vec if nir > 0 ]
         similarity_mat = rep_similarity_transformation(irmat_all, linear_irmat, linear_ir_dim, nir_vec)
+
     similarity_mat = numpy_to_sympy(similarity_mat)
-   #print('simmat:',similarity_mat)
     return linear_ir_str, similarity_mat
 
 
 def transform_basis(kp_ir_mats, ir_repr_vec, ir_repr_mat, ir_expr, symmetry_operations, msg_num=None, kvec=None):
     # For input expr, repr basis, find correspond Bilbao linear coirrep and similarity matrix, and then transform them. 
     kp_ir_mats = [ round_mat(m) for m in kp_ir_mats ] 
-   #print('kp ir_mat:',kp_ir_mats, '\nexpr_basis_orig:',ir_expr, '\nrepr_basis_orig:',ir_repr_mat,'\n')
     Locate = os.path.abspath(os.path.dirname(__file__))
     if msg_num != None and '.' not in str(msg_num):
         # if input msg_num is an sg num, find corresponding type2 msg_num (msg_num always has an '.' in it)
@@ -318,7 +314,30 @@ def transform_basis(kp_ir_mats, ir_repr_vec, ir_repr_mat, ir_expr, symmetry_oper
 
 
 def decompose_kp(basis_vector, repr_basis, expr_basis, symmetry_operations, Base_vec, msg_num=None, kvec=None):
-    """ calculate the representation matrix of output basis vector"""
+    """ decompose the kp hamiltonian into symmetric repr and expr basis, using linear coirreps of the little group. 
+    
+    :param basis_vector: The kp hamiltonian written in the full basis
+    :type basis_vector: :py:class:`list` of :py:class:`int`
+    
+    :param repr_basis: The basis for the hermitian matrices, with the same size as the representations. 
+                       By default, the :py:func:`.hermitian_pauli_basis` of the appropriate size is used.
+    :type repr_basis: :py:class:`list` of :py:mod:`sympy` matrices
+
+    :param expr_basis: The basis for the monomial functions that are considered.
+    :type expr_basis: :py:class:`list` of :py:mod:`sympy` expressions
+
+    :param symmetry_operations: The symmetry operations that the Hamiltonian should respect.
+    :type symmetry_operations: :py:class: `list` of `symmetry_representation.SymmetryOperation`
+
+    :param Base_vec: The variable of the hamiltonian
+    :type kp_variable: :py:class: `list` of :py:mod:`sympy` expressions
+    
+    :param msg_num & kvec: two string used to denote the magnetic space group and little group k, 
+                             used to locate linear representations in order to decompose kp hamiltonian.
+    :type msg_num & kvec: :py:class:str
+
+    :returns: decomposed repr and expr basis, as well as the linear coirrep label.
+    """
 
     def vec_in_array(vec, array):
         # return whether vec is in array(can time a coefficient), and if yes, its location in array, and the coeff

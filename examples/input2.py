@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # Author: Yi Jiang, <jiangyi14@mails.ucas.ac.cn>, Institute of Physics, Chinese Academy of Sciences
 
+import numpy as np
 import sympy as sp
 from sympy.core.numbers import I
 import sympy.physics.matrices as sm
@@ -55,18 +56,18 @@ def print_result(sym_ops, order, kp_variable, msg_num, kvec):
         print('\n==========  Result of msg %s  order = %s  =========='%(msg_num, str(order)))
         kpmodel, irrep_expr_basis, irrep_repr_basis = kp.symmetric_hamiltonian(
             sym_ops,
-            expr_basis = kp.monomial_basis(order, kp_variable),
-            repr_basis = 'pauli',
             kp_variable = kp_variable,
+            order = order,
+            repr_basis = 'pauli',
             msg_num = msg_num,
             kvec = kvec
         )
 
 
 if __name__ == '__main__':
-    kp_variable = 'k'   # kp_variable can be either 'k', 'E', 'B', 'k E', 'k B', 'E B', 'e'
-    order = 2   # Generate all kp models with order <= 2
-    msg_num = 123    # Optional parameter. Gives the msg number. For non-magnetic SG (i.e., type-2 msg), either the SG number or the msg number is applicable.
+    kp_variable = 'E B' # kp_variable can be either 'k', 'E', 'B', 'e', 'k E', 'k B', 'E B', 'k E B' (use space to seperate different variable)
+    order = 2         # Generate all kp models with order <= 2
+    msg_num = 123     # Optional parameter. Gives the msg number. For non-magnetic SG (i.e., type-2 msg), either the SG number or the msg number is applicable.
     kvec = [0,0,0]    # Optional parameter. Gives the kvec of the corresponding kpoint (convertional lattice).
     sym_ops = [c4z, c2, P, time_reversal]
     print_result(sym_ops, order, kp_variable, msg_num, kvec)

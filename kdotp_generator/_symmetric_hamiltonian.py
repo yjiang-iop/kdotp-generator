@@ -11,7 +11,7 @@ from functools import reduce
 import scipy.linalg as la
 from fsc.export import export
 
-from ._expr_utils import expr_to_vector, matrix_to_expr_operator
+from ._expr_utils import monomial_basis, expr_to_vector, matrix_to_expr_operator
 from ._repr_utils import hermitian_to_vector, hermitian_basis, repr_to_matrix_operator, check_orthogonal, frobenius_product, solve_linear_system_numpy
 from ._repr_utils import hermitian_pauli_basis, hermitian_pauli_basis_symbols 
 from ._linalg import intersection_basis, nullspace_blocked
@@ -23,42 +23,39 @@ from ._decompose_kp import decompose_kp
 @export
 def symmetric_hamiltonian(
     symmetry_operations,   
-    expr_basis,
-    repr_basis='pauli',
     kp_variable = 'k',
+    order = [0],
+    repr_basis = 'pauli',
     msg_num = None,
     kvec = None,
-    check_repr_basis=False
 ):
     r"""
     Calculates the basis of the symmetric Hamiltonian for a given set of symmetry operations.
 
     :param symmetry_operations: The symmetry operations that the Hamiltonian should respect.
     :type symmetry_operations: :py:class: `list` of `symmetry_representation.SymmetryOperation`
-    # Modified by YJ: remove *, input symmetry_operations should be a list
 
-    :param expr_basis: The basis for the :math:`\mathbf{k}`-functions that are considered.
-    :type expr_basis: :py:class:`list` of :py:mod:`sympy` expressions
+    :param kp_variable: The variable of the hamiltonian, can be anyone of 'k', 'E', 'B', 'e', 'k E', 'k B', 'E B', 'k E B'
+    :type kp_variable: :py:class:str
+
+    :param order: The list of orders of the monomials. Each number in the list specifies the order of a variable.
+    :type order: :py:class:`list` of :py:class:`int`
 
     :param repr_basis: The basis for the hermitian matrices, with the same size as the representations. 
                        By default, the :py:func:`.hermitian_pauli_basis` of the appropriate size is used.
     :type repr_basis: :py:class:`list` of :py:mod:`sympy` matrices
-
+    
     :param msg_num & kvec: two string used to denote the magnetic space group and little group k, 
-                             used to locate linear representations in order to decompose kp hamiltonian. Added by YJ.
+                             used to locate linear representations in order to decompose kp hamiltonian.
     :type msg_num & kvec: :py:class:str
 
-    :param check_repr_basis: Flag to enable explicitly checking the orthogonality of ``repr_basis``.
-    :type check_repr_basis: bool
-
     :returns: Basis for the symmetric Hamiltonian, as a :py:class:`list` of :py:mod:`sympy` matrix expressions.
-    # Modified by YJ: if msg_num and kvec is specified, also return list of decomposed repr and expr basis, otherwise return empty lists.
+    # Modified by YJ: if msg_num and kvec is specified, also return lists of decomposed repr and expr basis, otherwise return empty lists.
     """
     if any(sym_op.numeric for sym_op in symmetry_operations):
         raise ValueError(
             'Symmetry operations used in kdotp-symmetry can not be numeric.'
         )
-    expr_dim = len(expr_basis)
     # for sympy or numpy matrices
     try:
         repr_matrix_size = symmetry_operations[0].repr.matrix.shape[0]
@@ -74,12 +71,11 @@ def symmetric_hamiltonian(
         repr_basis = hermitian_pauli_basis(repr_matrix_size)
         repr_basis_symbols = hermitian_pauli_basis_symbols(repr_matrix_size)
 
-    if check_repr_basis:
+    if repr_basis not in ['auto', 'pauli']:
         check_orthogonal(repr_basis)
     
-    kp_variable = kp_variable.split()
     Base_vec = ''
-    for t in kp_variable:
+    for t in kp_variable.split():
         if t == 'k':
             Base_vec += 'kx ky kz '
         elif t == 'E':
@@ -89,7 +85,9 @@ def symmetric_hamiltonian(
         elif t == 'e':
             Base_vec += 'ex ey ez '
     Base_vec = sp.symbols(Base_vec)
+    expr_basis = monomial_basis(order, kp_variable) 
 
+    expr_dim = len(expr_basis)
     repr_dim = len(repr_basis)
     repr_basis_norm_squares = [frobenius_product(b, b) for b in repr_basis]
     full_dim = expr_dim * repr_dim

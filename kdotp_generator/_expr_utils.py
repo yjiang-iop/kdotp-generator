@@ -87,6 +87,9 @@ def monomial_basis(degree_list, kp_variable = 'k'):
     :param degrees: Degree of the monomials. # Modified by YJ: degree_list=[d1,d2..], with each di denotes the degree of one type of kp_variable 
     :type degrees: list
 
+    :param kp_variable: The variable of the hamiltonian, can be anyone of 'k', 'E', 'B', 'e', 'k E', 'k B', 'E B', 'k E B'
+    :type kp_variable: :py:class:str
+
     Example:
         >>> import kdotp_symmetry as kp
         >>> kp.monomial_basis([1,2], kp_variable='k E')
