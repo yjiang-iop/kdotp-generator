@@ -3,13 +3,8 @@
 A script used to load the kp results of MSGs. Users can type in desired MSG number, coirrep label, and variable, 
 and this script can print corresponding kp results.
 """
-
 import numpy as np 
 import os
-
-Library = '../data'
-msg_data = np.load(Library+"/msg_data.npy",allow_pickle=True)
-
 
 def load_data(msg_num, variable):
     # variable in list: ['k','E','B','kE','kB', 'EB', 'epsilon']
@@ -66,15 +61,57 @@ def load_data(msg_num, variable):
 
     return msg_kpdata
 
+
+def read_coir_kp_data(data):
+    # read the data for each coir
+    data = data.split('\n')
+    order_collect = []
+    for cnt, line in enumerate(data):
+        if '====  Result of msg ' in line:
+            order_collect.append([line])
+        else:
+            order_collect[-1].append(line)
+
+    dict_data = []
+    for ith, ith_data in enumerate(order_collect):
+        if 'No symmetry-allowed kp models.' in ith_data[1]:
+            dict_data.append({'kpmodel':[], 'basis_vec':[]})
+            continue
+            
+        cnt = 1
+        while 'Warning: fail to transform basis according to linear coirrep!' in ith_data[cnt]:
+            cnt += 1
+        assert 'Number of independent kp models: ' in ith_data[cnt], ith_data
+        num_kp = int(ith_data[cnt].strip().split()[-1])
+
+        ith_dict = {'kpmodel':[], 'basis_vec':[]}
+        for cnt, line in enumerate(ith_data):
+            if '-th kp model:' in line:
+                ith_dict['kpmodel'].append(ith_data[cnt+1])
+
+                basis_vec = ith_data[cnt+2][14:]
+                ith_dict['basis_vec'].append(basis_vec)
+
+        assert num_kp == len(ith_dict['kpmodel']), ('num not match!', num_kp, ith_dict['kpmodel'])
+        dict_data.append(ith_dict)
+        
+    return dict_data
+
+
+
+
+
+
 if __name__ == '__main__':
     msg_num = '10.44'
     coir = 'GM3d_GM4d'
-    variable = 'k'
+    variable = 'k'  # load the result for this variable, can be anyone of ['k', 'E', 'B', 'epsilon', 'kE', 'kB', 'EB']
 
     msg_data = load_data(msg_num, variable)
 
     coir_data = [ d for kdict in msg_data for d in kdict if d['coir_label'] == coir ][0]
-    print('msg_num: %s  coir_label: %s\n\n'%(coir_data['msg_num'], coir_data['coir_label']))
+    print('\nmsg_num: %s  coir_label: %s\n'%(coir_data['msg_num'], coir_data['coir_label']))
     print(coir_data['rep_data'])
     print(coir_data['kp_data'])
 
+    #dict_data = read_coir_kp_data(coir_data['kp_data'])
