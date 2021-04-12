@@ -26,7 +26,7 @@ Three parameters need to be specified to run the main function `symmetric_hamilt
 #### symmetry_operations
 The symmetry operations of the group generators. They are generated using the `symmetry_representation.SymmetryOperation` class, with three attributes:
 - `rotation_matrix`: the O(3) (real-space) rotation matrix of the operation.
-- `repr_matrix`: the representation matrix of the operation, either reducible or irreducible. This matrix needs to be sympy.Matrix (but not numpy.array), and non-integer numbers should be typed by sympy.Rational() and sympy.sqrt(). If there are exponential numbers, converting them to sqrt number is more efficient to compute.
+- `repr_matrix`: the representation matrix of the operation, either reducible or irreducible. This matrix needs to be sympy.Matrix (but not numpy.array), and non-integer numbers should be typed by sympy.Rational() and sympy.sqrt(). If there are exponential numbers, converting them to square numbers is more efficient to compute, e.g., `sp.exp(I*Pi/4)=(sp.sqrt(2)+sp.sqrt(2)*I)/2`.
 - `repr_has_cc`: a boolean flag to determine whether the operation is unitary or anti-unitary. If `repr_has_cc=True`, the operation becomes g*T, with g being unitary and specified in `rotation_matrix`, and `repr_matrix` contains a complex conjugation.
 
 #### kp_variable
@@ -57,7 +57,7 @@ When `repr_basis='pauli'`:
 - If dim=4, the 16 Gamma matrices are used, denoted by *Gamma_ij, i,j=0~3*.  
   The cases of dim=2^n are similar.
 - If dim=3, the 9 Gellmann matrices are used, denoted by *G_i, i=0~8*.
-- If dim=6, the 4*9 Pauli matrices direct product with Gellmann matrices are used, denoted by *G_ij, i=0~3, j=0~8*. The cases of dim=3 *2^n are similar.
+- If dim=6, the 4*9 Pauli matrices direct product with Gellmann matrices are used, denoted by *G_ij, i=0-3, j=0-8*. The cases of dim=3 *2^n are similar.
 - For other dimensions, the natural basis of hermitian matrices is used.
 
 Users can use the `hermitian_pauli_basis` function check the matrix form of basis:
@@ -104,7 +104,14 @@ For each independent kp basis, there are 5 parts:
 There are a few tips on the usage of this package:
 - For `order>3` and `dim>8`, the computation could be very slow (~ a few hours). 
 - `Sympy>=1.6` may lead to errors. To be fixed in a future version. 
-
+You can check you `Sympy` version by:
+```bash
+>>>pip list | grep sympy
+```
+If the version is to high, you can downgrade it by:
+```bash
+>>>pip install sympy==1.5.1
+```
 
 ## Modifications from the *kdotp-symmetry* package
 The original *kdotp-symmetry* package is well-written and the main program structure is maintained in the *kdop-generator* package. We remark here the major modifications:
