@@ -8,9 +8,7 @@ import random
 import operator
 from functools import reduce
 from itertools import combinations_with_replacement, product
-
 import sympy as sp
-from fsc.export import export
 
 
 def expr_to_vector(
@@ -79,7 +77,6 @@ def expr_to_vector(
     return vec
 
 
-@export
 def monomial_basis(degree_list, kp_variable = 'k'):
     """
     Returns the product basis of (kx, ky, kz), with monomials of the given degrees.

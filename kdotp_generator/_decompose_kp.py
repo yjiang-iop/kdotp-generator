@@ -196,11 +196,11 @@ def irrep_to_linear_irrep(irmat_gen, k_dict, symmetry_operations):
         rotC = k_dict['rotC'][0:len(k_dict['rotC'])]
         un_rot_set, un_rep_set, au_rot_set, au_rep_set = [], [], [], []
         for isym, sym_op in enumerate(symmetry_operations):
-            if sym_op.repr.has_cc:
-                au_rot_set.append(np.array(sym_op.rotation_matrix).astype(int))
+            if sym_op['repr_has_cc']:
+                au_rot_set.append(np.array(sym_op['rotation_matrix']).astype(int))
                 au_rep_set.append(irmat[isym])
             else:
-                un_rot_set.append(np.array(sym_op.rotation_matrix).astype(int))
+                un_rot_set.append(np.array(sym_op['rotation_matrix']).astype(int))
                 un_rep_set.append(irmat[isym])
 
         for iop1, op1 in enumerate(un_rot_set):
@@ -417,7 +417,7 @@ def decompose_kp(basis_vector, repr_basis, expr_basis, symmetry_operations, Base
             for isym_op, sym_op in enumerate(symmetry_operations):
                 expr_mat = to_matrix(
                     operator=matrix_to_expr_operator(
-                        sym_op.rotation_matrix, repr_has_cc=sym_op.repr.has_cc,
+                        sym_op['rotation_matrix'], repr_has_cc = sym_op['repr_has_cc'],
                         K_VEC = Base_vec
                     ),
                     basis=basis_expression,
@@ -431,7 +431,7 @@ def decompose_kp(basis_vector, repr_basis, expr_basis, symmetry_operations, Base
                 for isym_op, sym_op in enumerate(symmetry_operations):
                     repr_mat = to_matrix(
                         operator=repr_to_matrix_operator(
-                            sym_op.repr.matrix, complex_conjugate=sym_op.repr.has_cc
+                            sym_op['repr_matrix'], complex_conjugate = sym_op['repr_has_cc']
                         ),
                         basis=basis_expression,
                         to_vector_fct=hermitian_to_vector,
@@ -442,7 +442,7 @@ def decompose_kp(basis_vector, repr_basis, expr_basis, symmetry_operations, Base
                 for isym_op, sym_op in enumerate(symmetry_operations):
                     repr_mat = to_matrix(
                         operator=repr_to_matrix_operator(
-                            sym_op.repr.matrix, complex_conjugate=sym_op.repr.has_cc
+                            sym_op['repr_matrix'], complex_conjugate = sym_op['repr_has_cc']
                         ),
                         basis=basis_expression,
                         to_vector_fct=solve_linear_system_numpy
@@ -453,7 +453,7 @@ def decompose_kp(basis_vector, repr_basis, expr_basis, symmetry_operations, Base
     def _check_irrep_expr(basis_expression, symmetry_operations, irrep, Base_vec):
         # check if R*f(k) == f(k) * D (=D.T * f), where R is the symmetry_operation, D is the irmat
         for irmat, sym_op in zip(irrep, symmetry_operations):
-            operator = matrix_to_expr_operator(sym_op.rotation_matrix, repr_has_cc=sym_op.repr.has_cc, K_VEC=Base_vec)
+            operator = matrix_to_expr_operator(sym_op['rotation_matrix'], repr_has_cc = sym_op['repr_has_cc'], K_VEC=Base_vec)
             basis_expression = sp.Matrix(basis_expression)
             Rf = operator(basis_expression)
             Df = irmat.transpose() @ basis_expression

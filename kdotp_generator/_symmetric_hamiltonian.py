@@ -9,7 +9,6 @@ from sympy.physics.quantum import TensorProduct
 import numpy as np
 from functools import reduce
 import scipy.linalg as la
-from fsc.export import export
 
 from ._expr_utils import monomial_basis, expr_to_vector, matrix_to_expr_operator
 from ._repr_utils import hermitian_to_vector, hermitian_basis, repr_to_matrix_operator, check_orthogonal, frobenius_product, solve_linear_system_numpy
@@ -20,7 +19,6 @@ from ._logging_setup import LOGGER
 from ._decompose_kp import decompose_kp
 
 
-@export
 def symmetric_hamiltonian(
     symmetry_operations,   
     kp_variable = 'k',
@@ -33,7 +31,7 @@ def symmetric_hamiltonian(
     Calculates the basis of the symmetric Hamiltonian for a given set of symmetry operations.
 
     :param symmetry_operations: The symmetry operations that the Hamiltonian should respect.
-    :type symmetry_operations: :py:class: `list` of `symmetry_representation.SymmetryOperation`
+    :type symmetry_operations: :py:class: `dict` with keys 'rotation_matrix', 'repr_matrix', 'repr_has_cc'. 
 
     :param kp_variable: The variable of the hamiltonian, can be anyone of 'k', 'E', 'B', 'e', 'k E', 'k B', 'E B', 'k E B'
     :type kp_variable: :py:class:str
@@ -52,17 +50,13 @@ def symmetric_hamiltonian(
     :returns: Basis for the symmetric Hamiltonian, as a :py:class:`list` of :py:mod:`sympy` matrix expressions.
     # Modified by YJ: if msg_num and kvec is specified, also return lists of decomposed repr and expr basis, otherwise return empty lists.
     """
-    if any(sym_op.numeric for sym_op in symmetry_operations):
-        raise ValueError(
-            'Symmetry operations used in kdotp-symmetry can not be numeric.'
-        )
     # for sympy or numpy matrices
     try:
-        repr_matrix_size = symmetry_operations[0].repr.matrix.shape[0]
+        repr_matrix_size = symmetry_operations[0]['repr_matrix'].shape[0]
     # for plain lists -- this doesn't work for sympy matrices because
     # their 'len' is the total number of elements
     except AttributeError:
-        repr_matrix_size = len(symmetry_operations[0].repr.matrix)
+        repr_matrix_size = len(symmetry_operations[0]['repr_matrix'])
 
     repr_basis_type = 'pauli' if repr_basis == 'pauli' else None
     if repr_basis == 'auto':
@@ -103,7 +97,7 @@ def symmetric_hamiltonian(
         LOGGER.info('Calculating matrix form of expression.')
         expr_mat = to_matrix(
             operator=matrix_to_expr_operator(
-                sym_op.rotation_matrix, repr_has_cc=sym_op.repr.has_cc,
+                sym_op['rotation_matrix'], repr_has_cc = sym_op['repr_has_cc'],
                 K_VEC = Base_vec
             ),
             basis=expr_basis,
@@ -115,7 +109,7 @@ def symmetric_hamiltonian(
         LOGGER.info('Calculating matrix form of representation.')
         repr_mat = to_matrix(
             operator=repr_to_matrix_operator(
-                sym_op.repr.matrix, complex_conjugate=sym_op.repr.has_cc
+                sym_op['repr_matrix'], complex_conjugate = sym_op['repr_has_cc']
             ),
             basis=repr_basis,
             to_vector_fct=hermitian_to_vector,

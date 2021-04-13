@@ -8,7 +8,6 @@ import numpy as np
 import sympy as sp
 from sympy.physics.quantum import TensorProduct
 from sympy.core.numbers import I
-from fsc.export import export
 from sympy import sqrt
 
 
@@ -19,7 +18,6 @@ def frobenius_product(A, B):
     return (sp.simplify(A.H) @ sp.simplify(B)).trace().nsimplify()
 
 
-@export
 def hermitian_basis(dim):
     """
     Returns a basis of the hermitian matrices of size ``dim`` that is orthogonal w.r.t. the Frobenius scalar product.
@@ -61,7 +59,6 @@ def hermitian_basis(dim):
     assert len(basis) == dim**2
     return basis
 
-@export
 def hermitian_pauli_basis(dim):
     '''
     Returns a basis of the hermitian pauli matrices (or Gellmann matrics) of size ``dim`` that is orthogonal w.r.t. the Frobenius scalar product.
@@ -111,7 +108,6 @@ def hermitian_pauli_basis(dim):
        #raise ValueError('input dim not supported!')
         return hermitian_basis(dim)
 
-@export
 def hermitian_pauli_basis_symbols(dim):
     '''
     Returns a list of the symbols of hermitian pauli matrices (or Gellmann matrics) of size ``dim``, e.g 's0 * s1 '
@@ -144,7 +140,7 @@ def hermitian_pauli_basis_symbols(dim):
     elif dim == 12:
         return [ 'G_'+si+sj+sk for si in pauli_basis for sj in pauli_basis for sk in gellmann_basis]
     else:   
-        return [ 'H_'+i for i in range(dim*dim) ]
+        return [ 'H_'+str(i) for i in range(dim*dim) ]
 
 
 def check_orthogonal(basis):
