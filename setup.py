@@ -1,5 +1,5 @@
-# © 2017-2018, ETH Zurich, Institut für Theoretische Physik
-# Author:  Dominik Gresch <greschd@gmx.ch>
+# Author: Yi Jiang, <jiangyi14@mails.ucas.ac.cn>, Institute of Physics, Chinese Academy of Sciences
+# Adapted from the kdotp-symmetry package by: Dominik Gresch <greschd@gmx.ch>  © 2017-2018, ETH Zurich, Institut für Theoretische Physik
 """
 Usage: pip install -e .[dev]
 """
@@ -11,22 +11,22 @@ if sys.version_info < (3, 6):
 
 from setuptools import setup
 
-README = """A tool for calculating the general form of a k.p Hamiltonian under given symmetry constraints."""
+README = """A tool for computing k.p effective Hamiltonians, and couplings of external fields including E, B, and epsilon, under given symmetry constraints."""
 
-with open('./kdotp_symmetry/__init__.py', 'r') as f:
+with open('./kdotp_generator/__init__.py', 'r') as f:
     MATCH_EXPR = "__version__[^'\"]+(['\"])([^'\"]+)"
     VERSION = re.search(MATCH_EXPR, f.read()).group(2)
 
 setup(
-    name='kdotp-symmetry',
+    name='kdotp-generator',
     version=VERSION,
-    url='https://kdotp-symmetry.greschd.ch',
-    author='Dominik Gresch',
-    author_email='greschd@gmx.ch',
+    url='https://github.com/yjiang-iop/kdotp-generator',
+    author='Yi Jiang, Dominik Gresch',
+    author_email='jiangyi14@mails.ucas.ac.cn, greschd@gmx.ch',
     description=
-    'Calculating the general form of a k.p Hamiltonian with given symmetry constraints.',
+    'A tool for computing k.p effective Hamiltonians.',
     install_requires=[
-        'sympy<1.5', 'numpy', 'scipy', 'fsc.export',
+        'sympy', 'numpy', 'scipy', 'fsc.export',
         'symmetry-representation>=0.3', 'networkx>=2'
     ],
     python_requires=">=3.6",
@@ -49,5 +49,6 @@ setup(
         'Development Status :: 4 - Beta'
     ],
     license='Apache 2.0',
-    packages=['kdotp_symmetry']
+    packages=['kdotp_generator', 'kdotp_generator.MSG_linear_coir_data'],
+    include_package_data=True
 )

@@ -1,7 +1,7 @@
 # *kdotp-generator* 
 This package is used to automatically generate kdotp effective Hamiltonians, developed based on the [*kdotp-symmetry*](https://kdotp-symmetry.greschd.ch/en/latest/) package by D. Gresch. 
 
-To use this package, users can either input their symmetry data and compute the effective Hamiltonians, or directly refer to the pre-computed results for magnetic space groups (MSGs).
+To use this package, users can either input their symmetry data and compute the effective Hamiltonians, or directly refer to the pre-computed results for magnetic space groups (MSGs) in the `MSG_kp_results` folder.
 
 If you are using this package, please cite the following works:
 - [*A kp effective Hamiltonian generator*](), Yi Jiang, Chen Fang.
@@ -103,15 +103,7 @@ For each independent kp basis, there are 5 parts:
 ## Tips
 There are a few tips on the usage of this package:
 - For `order>3` and `dim>8`, the computation could be very slow (~ a few hours). 
-- `Sympy>=1.6` may lead to errors. To be fixed in a future version. 
-You can check you `Sympy` version by:
-```bash
->>>pip list | grep sympy
-```
-If the version is to high, you can downgrade it by:
-```bash
->>>pip install sympy==1.5.1
-```
+- ...
 
 ## Modifications from the *kdotp-symmetry* package
 The original *kdotp-symmetry* package is well-written and the main program structure is maintained in the *kdop-generator* package. We remark here the major modifications:
