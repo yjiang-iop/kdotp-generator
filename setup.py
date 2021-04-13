@@ -11,7 +11,7 @@ if sys.version_info < (3, 6):
 
 from setuptools import setup
 
-README = """A tool for computing k.p effective Hamiltonians, and couplings of external fields including E, B, and epsilon, under given symmetry constraints."""
+README = """A tool for computing k.p effective Hamiltonians with couplings to external fields including E, B, and epsilon, under given symmetry constraints."""
 
 with open('./kdotp_generator/__init__.py', 'r') as f:
     MATCH_EXPR = "__version__[^'\"]+(['\"])([^'\"]+)"
@@ -26,8 +26,7 @@ setup(
     description=
     'A tool for computing k.p effective Hamiltonians.',
     install_requires=[
-        'sympy', 'numpy', 'scipy', 'fsc.export',
-        'symmetry-representation>=0.3', 'networkx>=2'
+        'sympy', 'numpy', 'scipy', 'networkx>=2'
     ],
     python_requires=">=3.6",
     extras_require={

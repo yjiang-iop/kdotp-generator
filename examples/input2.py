@@ -10,6 +10,8 @@ import kdotp_generator as kp
 
 # This example is of non-magnetic SG 123, GM, GM6d + GM9d 
 # creating the symmetry operations
+# The rotation_matrix and repr_matrix are recommended to use sp.Matrix(), 
+# Avoid float numbers, use sp.Rational() and sp.sqrt() instead.
 c4z = {
     'rotation_matrix': [[0, -1, 0], [1, 0, 0], [0, 0, 1]],
     'repr_matrix': TensorProduct(sp.diag(1,-1), sp.Matrix([[-sp.sqrt(2)+sp.sqrt(2)*I, 0], [0, -sp.sqrt(2)-sp.sqrt(2)*I]])/2),

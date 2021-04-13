@@ -24,10 +24,12 @@ Three parameters need to be specified to run the main function `symmetric_hamilt
 3. `order`
 
 #### symmetry_operations
-The symmetry operations of the group generators. They are generated using the `symmetry_representation.SymmetryOperation` class, with three attributes:
+The symmetry operations of the group generators. They are generated using python dictionary, with three keys:
 - `rotation_matrix`: the O(3) (real-space) rotation matrix of the operation.
-- `repr_matrix`: the representation matrix of the operation, either reducible or irreducible. This matrix needs to be sympy.Matrix (but not numpy.array), and non-integer numbers should be typed by sympy.Rational() and sympy.sqrt(). If there are exponential numbers, converting them to square numbers is more efficient to compute, e.g., `sp.exp(I*Pi/4)=(sp.sqrt(2)+sp.sqrt(2)*I)/2`.
+- `repr_matrix`: the representation matrix of the operation, either reducible or irreducible. 
 - `repr_has_cc`: a boolean flag to determine whether the operation is unitary or anti-unitary. If `repr_has_cc=True`, the operation becomes g*T, with g being unitary and specified in `rotation_matrix`, and `repr_matrix` contains a complex conjugation.
+
+Both `rotation_matrix` and `repr_matrix` are recommended to use `sympy.Matrix()`, and non-integer numbers should be typed by `sympy.Rational()` and `sympy.sqrt()`. If there are exponential numbers, converting them to square numbers is more efficient to compute, e.g., `sp.exp(I*Pi/4)=(sp.sqrt(2)+sp.sqrt(2)*I)/2`.
 
 #### kp_variable
 The variable of the effective Hamiltonians. When using the default value `'k'`, the kp Hamiltonian is calculated. Other variables include `'E'`, `'B'`, and `'e'` (the strain tensor epsilon), as well as combinations of them like `'k E'`, `'k B'`, and `'E B'` (use space to separate different variables). Three or more variables may also be used, but the computation could be very slow.
