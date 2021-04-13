@@ -130,8 +130,10 @@ def symmetric_hamiltonian(
         # get Eig(F \ocross G, 1) basis
         mat = full_mat - sp.eye(full_dim)
         LOGGER.info('Calculating nullspace.')
-        curr_basis = np.array(nullspace_blocked(mat, simplify=sp.nsimplify)
-                              ).tolist()  
+        nullspace_basis = nullspace_blocked(mat, simplify=sp.nsimplify)
+        # Modified by YJ: reshape here is necessary. The original np.array(nullspace_basis).tolist() will run into bugs for python>3.8
+        curr_basis = [ bs.reshape(1, expr_dim*repr_dim) for bs in nullspace_basis ]
+
         if len(curr_basis) != _numeric_nullspace_dim(mat):
             raise ValueError(
                 'Analytic and numeric dimensions of the nullspace of the matrix {mat} do not match'

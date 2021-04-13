@@ -61,7 +61,7 @@ def expr_to_vector(
             raise ValueError(
                 'Could not find a sufficient number of linearly independent vectors'
             )
-    res = sp.linsolve((sp.Matrix(A), sp.Matrix(b)), sp.symbols('a b c'))
+    res = sp.linsolve((sp.Matrix(A), sp.Matrix(b)))
     if len(res) != 1:
         raise ValueError(
             'Invalid result {res} when trying to match expression {expr} to basis {basis}.'
@@ -69,7 +69,7 @@ def expr_to_vector(
         )
     vec = next(iter(res))
    #vec = tuple(v.nsimplify() for v in vec)
-    vec = tuple(0 if abs(v.nsimplify())<1e-7 else v.nsimplify() for v in vec) # modified by YJ
+    vec = tuple(0 if abs(sp.nsimplify(v))<1e-7 else sp.nsimplify(v) for v in vec) # modified by YJ
     # check consistency
     if not expr.equals(sum(v * b for v, b in zip(vec, basis))):
         raise ValueError(

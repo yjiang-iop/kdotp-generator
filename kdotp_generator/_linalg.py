@@ -94,10 +94,11 @@ def nullspace_blocked(matrix, **kwargs):
             continue
         mat_part = matrix[row_indices, column_indices]
         # Get rid of fractions -- least common multiple of the denominators
-        # This greatly improves the performance of sympy's nullspace -- for
-        # whatever reason.
+        # This greatly improves the performance of sympy's nullspace -- for whatever reason.
         mat_part *= sp.lcm([sp.fraction(val)[1] for val in mat_part])
-        nullspace_part = np.array(mat_part.nullspace(**kwargs))
+        nullspace_part = mat_part.nullspace(**kwargs)
+        # Modified by YJ: reshape here is necessary. Original np.array(nullspace_part) will have bugs for python>3.8
+        nullspace_part = [ mat.reshape(1, len(nullspace_part[0])) for mat in nullspace_part ]
         if len(nullspace_part) == 0:
             continue
         nullspace_part_extended = np.zeros((len(nullspace_part), n_cols),
