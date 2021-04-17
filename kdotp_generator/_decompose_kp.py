@@ -457,7 +457,7 @@ def decompose_kp(basis_vector, repr_basis, expr_basis, symmetry_operations, Base
             basis_expression = sp.Matrix(basis_expression)
             Rf = operator(basis_expression)
             Df = irmat.transpose() @ basis_expression
-            assert Rf.simplify() == Df.simplify(), (Rf, Df, basis_expression, irmat, sym_op.rotation_matrix)
+            assert Rf.simplify() == Df.simplify(), (Rf, Df, basis_expression, irmat, sym_op['rotation_matrix'])
     
     
     repr_dim, expr_dim = len(repr_basis), len(expr_basis)
