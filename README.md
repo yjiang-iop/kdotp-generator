@@ -4,7 +4,7 @@ This package is used to automatically generate kdotp effective Hamiltonians, dev
 To use this package, users can either input their symmetry data and compute the effective Hamiltonians, or directly refer to the pre-computed results for magnetic space groups (MSGs) in the `MSG_kp_results` folder.
 
 If you are using this package, please cite the following works:
-- [*A kp effective Hamiltonian generator*](), Yi Jiang, Chen Fang.
+- [*A kp effective Hamiltonian generator*](http://arxiv.org/abs/2104.08493), Yi Jiang, Zhong Fang, and Chen Fang.
 - [*Identifying Topological Semimetals*](https://www.research-collection.ethz.ch/handle/20.500.11850/308602), D. Gresch, PhD Thesis.
 
 ## Installation
@@ -24,7 +24,7 @@ Three parameters need to be specified to run the main function `symmetric_hamilt
 3. `order`
 
 #### symmetry_operations
-The symmetry operations of the group generators. They are generated using python dictionary, with three keys:
+The symmetry operations of the group generators. They are generated using python `dictionary`, with three keys:
 - `rotation_matrix`: the O(3) (real-space) rotation matrix of the operation.
 - `repr_matrix`: the representation matrix of the operation, either reducible or irreducible. 
 - `repr_has_cc`: a boolean flag to determine whether the operation is unitary or anti-unitary. If `repr_has_cc=True`, the operation becomes g*T, with g being unitary and specified in `rotation_matrix`, and `repr_matrix` contains a complex conjugation.
@@ -105,11 +105,11 @@ For each independent kp basis, there are 5 parts:
 ## Tips
 There are a few tips on the usage of this package:
 - For `order>3` and `dim>8`, the computation could be very slow (~ a few hours). 
-- ...
+- In the package, the strain tensor epsilon $e_{uv}$ is treated as two independent polar vectors $e_u e_v$.
 
 ## Modifications from the *kdotp-symmetry* package
 The original *kdotp-symmetry* package is well-written and the main program structure is maintained in the *kdop-generator* package. We remark here the major modifications:
 - Generalize the input so that it can compute the effective Hamiltonians of external fields and their couplings to k.
-- Add a post-processing step to decompose the effective Hamiltonian symmetrically using linear coirreps.
-- Slightly improve the efficiency of the code.
+- Add a post-processing step to decompose the Hamiltonian into symmetrical monomial function and Hermitian matrices bases using linear coirreps.
 - Pre-compute effective Hamiltonians in magnetic space groups up to the third order.
+- Slightly improve the efficiency of the code.
