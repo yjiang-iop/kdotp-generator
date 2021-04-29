@@ -79,7 +79,7 @@ def read_coir_kp_data(data):
             continue
             
         cnt = 1
-        while 'Warning: fail to transform basis according to linear coirrep!' in ith_data[cnt]:
+        while 'Warning' in ith_data[cnt]:
             cnt += 1
         assert 'Number of independent kp models: ' in ith_data[cnt], ith_data
         num_kp = int(ith_data[cnt].strip().split()[-1])
@@ -103,8 +103,8 @@ def read_coir_kp_data(data):
 
 
 if __name__ == '__main__':
-    msg_num = '10.44'
-    coir = 'GM3d_GM4d'
+    msg_num = '222.103'
+    coir = 'GM6d'
     variable = 'k'  # load the result for this variable, can be anyone of ['k', 'E', 'B', 'epsilon', 'kE', 'kB', 'EB']
 
     msg_data = load_data(msg_num, variable)

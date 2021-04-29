@@ -97,10 +97,11 @@ def nullspace_blocked(matrix, **kwargs):
         # This greatly improves the performance of sympy's nullspace -- for whatever reason.
         mat_part *= sp.lcm([sp.fraction(val)[1] for val in mat_part])
         nullspace_part = mat_part.nullspace(**kwargs)
-        # Modified by YJ: reshape here is necessary. Original np.array(nullspace_part) will have bugs for python>3.8
-        nullspace_part = [ mat.reshape(1, len(nullspace_part[0])) for mat in nullspace_part ]
         if len(nullspace_part) == 0:
             continue
+            
+        # Modified by YJ: reshape here is necessary. Original np.array(nullspace_part) will have bugs for python>3.8
+        nullspace_part = np.array(nullspace_part).reshape((len(nullspace_part), len(nullspace_part[0])))
         nullspace_part_extended = np.zeros((len(nullspace_part), n_cols),
                                            dtype=object)
         nullspace_part_extended[:, column_indices] = nullspace_part
