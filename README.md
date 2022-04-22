@@ -13,6 +13,8 @@ Pip is used to install the package:
 
 The pre-computed results for MSGs are not included in the pip installation. They can be downloaded from the `MSG_kp_results` folder in the [Github page of this package](https://github.com/yjiang-iop/kdotp-generator).
 
+Recently, we also add a new folder `MSG_kp_results_pair`, which contains the kp results for any pair of irreducible representations.
+
 ## Example
 Two examples are given in the *examples* folder, i.e., *input1.py* and *input2.py*, which calculate the effective Hamiltonians for k and (E, B), respectively, for non-magnetic space group 123 P4/mmm, representation $\Gamma_6, \Gamma_9$, up to the second order. 
 
@@ -99,7 +101,8 @@ For each independent kp basis, there are 5 parts:
 - The basis vector, written in the direct product basis, i.e., monomial basis direct product with the hermitian matrix basis. For example, when `order=1` and `dim=2`, the basis is:
   `[kx*S_0, kx*S_1, kx*S_2, kx*S_3, ky*S_0, ky*S_1, ky*S_2, ky*S_3, kz*S_0, kz*S_1, kz*S_2, kz*S_3]`
 - Linear IR: the linear irreducible corepresentation (coirrep) label of the decomposed basis. The definition of linear coirreps can be found in the `MSG_kp_results` folder.
-- Coefficient basis and Matrix basis: the decomposed symmetric basis.
+- Coefficient basis and Matrix basis: the decomposed symmetric basis. 
+When fails to decompose into symmetric basis, the output will be marked as `not symmetric`. This message only means the decomposition fails, and the kp results are still correct.
 
 
 ## Tips
