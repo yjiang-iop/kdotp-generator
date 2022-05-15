@@ -73,7 +73,7 @@ Irreducible co-representation matrices of generators:
  [[I 0]
  [0 -I]]
 Antiunitary op:
- [[0 1]
+ [[0 -1]
  [1 0]]
 
 
@@ -81,13 +81,13 @@ Print kp results:
 
 
 ==========  Result of msg 9.40  A1_A2  order = [1]  ==========
-Number of independent kp models: 8
+Number of independent kp models: 4
 -----------------------------------------------------
 1-th kp model:
 Matrix([[ex**2, 0], [0, ex**2]])
 Basis vector: [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ex**2
 
@@ -96,34 +96,10 @@ Symbol: s_0   Expression: Matrix([[1, 0], [0, 1]])
 
 -----------------------------------------------------
 2-th kp model:
-Matrix([[0, ex*ey], [ex*ey, 0]])
-Basis vector: [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-
-Decomposed basis using linear IR: 1 GM2  
-Coefficient basis:
-ex*ey
-
-Matrix basis:
-Symbol: s_1   Expression: Matrix([[0, 1], [1, 0]]) 
-
------------------------------------------------------
-3-th kp model:
-Matrix([[0, -I*ex*ey], [I*ex*ey, 0]])
-Basis vector: [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-
-Decomposed basis using linear IR: 1 GM2  
-Coefficient basis:
-ex*ey
-
-Matrix basis:
-Symbol: s_2   Expression: Matrix([[0, -I], [I, 0]]) 
-
------------------------------------------------------
-4-th kp model:
 Matrix([[ex*ez, 0], [0, ex*ez]])
 Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ex*ez
 
@@ -131,11 +107,11 @@ Matrix basis:
 Symbol: s_0   Expression: Matrix([[1, 0], [0, 1]]) 
 
 -----------------------------------------------------
-5-th kp model:
+3-th kp model:
 Matrix([[ey**2, 0], [0, ey**2]])
 Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ey**2
 
@@ -143,35 +119,11 @@ Matrix basis:
 Symbol: s_0   Expression: Matrix([[1, 0], [0, 1]]) 
 
 -----------------------------------------------------
-6-th kp model:
-Matrix([[0, ey*ez], [ey*ez, 0]])
-Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
-
-Decomposed basis using linear IR: 1 GM2  
-Coefficient basis:
-ey*ez
-
-Matrix basis:
-Symbol: s_1   Expression: Matrix([[0, 1], [1, 0]]) 
-
------------------------------------------------------
-7-th kp model:
-Matrix([[0, -I*ey*ez], [I*ey*ez, 0]])
-Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
-
-Decomposed basis using linear IR: 1 GM2  
-Coefficient basis:
-ey*ez
-
-Matrix basis:
-Symbol: s_2   Expression: Matrix([[0, -I], [I, 0]]) 
-
------------------------------------------------------
-8-th kp model:
+4-th kp model:
 Matrix([[ez**2, 0], [0, ez**2]])
 Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ez**2
 
@@ -223,7 +175,7 @@ Number of independent kp models: 4
 Matrix([[ex**2]])
 Basis vector: [1, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ex**2
 
@@ -235,7 +187,7 @@ Symbol: Identity   Expression: Matrix([[1]])
 Matrix([[ex*ez]])
 Basis vector: [0, 0, 1, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ex*ez
 
@@ -247,7 +199,7 @@ Symbol: Identity   Expression: Matrix([[1]])
 Matrix([[ey**2]])
 Basis vector: [0, 0, 0, 1, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ey**2
 
@@ -259,7 +211,7 @@ Symbol: Identity   Expression: Matrix([[1]])
 Matrix([[ez**2]])
 Basis vector: [0, 0, 0, 0, 0, 1]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ez**2
 
@@ -311,7 +263,7 @@ Number of independent kp models: 4
 Matrix([[ex**2]])
 Basis vector: [1, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ex**2
 
@@ -323,7 +275,7 @@ Symbol: Identity   Expression: Matrix([[1]])
 Matrix([[ex*ez]])
 Basis vector: [0, 0, 1, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ex*ez
 
@@ -335,7 +287,7 @@ Symbol: Identity   Expression: Matrix([[1]])
 Matrix([[ey**2]])
 Basis vector: [0, 0, 0, 1, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ey**2
 
@@ -347,7 +299,7 @@ Symbol: Identity   Expression: Matrix([[1]])
 Matrix([[ez**2]])
 Basis vector: [0, 0, 0, 0, 0, 1]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ez**2
 
@@ -441,7 +393,7 @@ Number of independent kp models: 4
 Matrix([[ex**2]])
 Basis vector: [1, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ex**2
 
@@ -453,7 +405,7 @@ Symbol: Identity   Expression: Matrix([[1]])
 Matrix([[ex*ez]])
 Basis vector: [0, 0, 1, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ex*ez
 
@@ -465,7 +417,7 @@ Symbol: Identity   Expression: Matrix([[1]])
 Matrix([[ey**2]])
 Basis vector: [0, 0, 0, 1, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ey**2
 
@@ -477,7 +429,7 @@ Symbol: Identity   Expression: Matrix([[1]])
 Matrix([[ez**2]])
 Basis vector: [0, 0, 0, 0, 0, 1]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ez**2
 
@@ -529,7 +481,7 @@ Number of independent kp models: 4
 Matrix([[ex**2]])
 Basis vector: [1, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ex**2
 
@@ -541,7 +493,7 @@ Symbol: Identity   Expression: Matrix([[1]])
 Matrix([[ex*ez]])
 Basis vector: [0, 0, 1, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ex*ez
 
@@ -553,7 +505,7 @@ Symbol: Identity   Expression: Matrix([[1]])
 Matrix([[ey**2]])
 Basis vector: [0, 0, 0, 1, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ey**2
 
@@ -565,7 +517,7 @@ Symbol: Identity   Expression: Matrix([[1]])
 Matrix([[ez**2]])
 Basis vector: [0, 0, 0, 0, 0, 1]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ez**2
 
@@ -619,7 +571,7 @@ Number of independent kp models: 4
 Matrix([[ex**2, 0], [0, ex**2]])
 Basis vector: [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ex**2
 
@@ -631,7 +583,7 @@ Symbol: s_0   Expression: Matrix([[1, 0], [0, 1]])
 Matrix([[ex*ez, 0], [0, ex*ez]])
 Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ex*ez
 
@@ -643,7 +595,7 @@ Symbol: s_0   Expression: Matrix([[1, 0], [0, 1]])
 Matrix([[ey**2, 0], [0, ey**2]])
 Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ey**2
 
@@ -655,7 +607,7 @@ Symbol: s_0   Expression: Matrix([[1, 0], [0, 1]])
 Matrix([[ez**2, 0], [0, ez**2]])
 Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ez**2
 
@@ -745,7 +697,7 @@ Number of independent kp models: 6
 Matrix([[ex**2, 0], [0, ex**2]])
 Basis vector: [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ex**2
 
@@ -757,7 +709,7 @@ Symbol: s_0   Expression: Matrix([[1, 0], [0, 1]])
 Matrix([[ex*ey, 0], [0, ex*ey]])
 Basis vector: [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ex*ey
 
@@ -769,7 +721,7 @@ Symbol: s_0   Expression: Matrix([[1, 0], [0, 1]])
 Matrix([[ex*ez, 0], [0, ex*ez]])
 Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ex*ez
 
@@ -781,7 +733,7 @@ Symbol: s_0   Expression: Matrix([[1, 0], [0, 1]])
 Matrix([[ey**2, 0], [0, ey**2]])
 Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ey**2
 
@@ -793,7 +745,7 @@ Symbol: s_0   Expression: Matrix([[1, 0], [0, 1]])
 Matrix([[ey*ez, 0], [0, ey*ez]])
 Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ey*ez
 
@@ -805,7 +757,7 @@ Symbol: s_0   Expression: Matrix([[1, 0], [0, 1]])
 Matrix([[ez**2, 0], [0, ez**2]])
 Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ez**2
 
@@ -857,7 +809,7 @@ Number of independent kp models: 6
 Matrix([[ex**2]])
 Basis vector: [1, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ex**2
 
@@ -869,7 +821,7 @@ Symbol: Identity   Expression: Matrix([[1]])
 Matrix([[ex*ey]])
 Basis vector: [0, 1, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ex*ey
 
@@ -881,7 +833,7 @@ Symbol: Identity   Expression: Matrix([[1]])
 Matrix([[ex*ez]])
 Basis vector: [0, 0, 1, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ex*ez
 
@@ -893,7 +845,7 @@ Symbol: Identity   Expression: Matrix([[1]])
 Matrix([[ey**2]])
 Basis vector: [0, 0, 0, 1, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ey**2
 
@@ -905,7 +857,7 @@ Symbol: Identity   Expression: Matrix([[1]])
 Matrix([[ey*ez]])
 Basis vector: [0, 0, 0, 0, 1, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ey*ez
 
@@ -917,7 +869,7 @@ Symbol: Identity   Expression: Matrix([[1]])
 Matrix([[ez**2]])
 Basis vector: [0, 0, 0, 0, 0, 1]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ez**2
 
@@ -999,7 +951,7 @@ Irreducible co-representation matrices of generators:
  [[I 0]
  [0 -I]]
 Antiunitary op:
- [[0 1]
+ [[0 -1]
  [1 0]]
 
 
@@ -1007,13 +959,13 @@ Print kp results:
 
 
 ==========  Result of msg 9.40  M1_M2  order = [1]  ==========
-Number of independent kp models: 8
+Number of independent kp models: 4
 -----------------------------------------------------
 1-th kp model:
 Matrix([[ex**2, 0], [0, ex**2]])
 Basis vector: [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ex**2
 
@@ -1022,34 +974,10 @@ Symbol: s_0   Expression: Matrix([[1, 0], [0, 1]])
 
 -----------------------------------------------------
 2-th kp model:
-Matrix([[0, ex*ey], [ex*ey, 0]])
-Basis vector: [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-
-Decomposed basis using linear IR: 1 GM2  
-Coefficient basis:
-ex*ey
-
-Matrix basis:
-Symbol: s_1   Expression: Matrix([[0, 1], [1, 0]]) 
-
------------------------------------------------------
-3-th kp model:
-Matrix([[0, -I*ex*ey], [I*ex*ey, 0]])
-Basis vector: [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-
-Decomposed basis using linear IR: 1 GM2  
-Coefficient basis:
-ex*ey
-
-Matrix basis:
-Symbol: s_2   Expression: Matrix([[0, -I], [I, 0]]) 
-
------------------------------------------------------
-4-th kp model:
 Matrix([[ex*ez, 0], [0, ex*ez]])
 Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ex*ez
 
@@ -1057,11 +985,11 @@ Matrix basis:
 Symbol: s_0   Expression: Matrix([[1, 0], [0, 1]]) 
 
 -----------------------------------------------------
-5-th kp model:
+3-th kp model:
 Matrix([[ey**2, 0], [0, ey**2]])
 Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ey**2
 
@@ -1069,35 +997,11 @@ Matrix basis:
 Symbol: s_0   Expression: Matrix([[1, 0], [0, 1]]) 
 
 -----------------------------------------------------
-6-th kp model:
-Matrix([[0, ey*ez], [ey*ez, 0]])
-Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
-
-Decomposed basis using linear IR: 1 GM2  
-Coefficient basis:
-ey*ez
-
-Matrix basis:
-Symbol: s_1   Expression: Matrix([[0, 1], [1, 0]]) 
-
------------------------------------------------------
-7-th kp model:
-Matrix([[0, -I*ey*ez], [I*ey*ez, 0]])
-Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
-
-Decomposed basis using linear IR: 1 GM2  
-Coefficient basis:
-ey*ez
-
-Matrix basis:
-Symbol: s_2   Expression: Matrix([[0, -I], [I, 0]]) 
-
------------------------------------------------------
-8-th kp model:
+4-th kp model:
 Matrix([[ez**2, 0], [0, ez**2]])
 Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ez**2
 
@@ -1149,7 +1053,7 @@ Number of independent kp models: 4
 Matrix([[ex**2]])
 Basis vector: [1, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ex**2
 
@@ -1161,7 +1065,7 @@ Symbol: Identity   Expression: Matrix([[1]])
 Matrix([[ex*ez]])
 Basis vector: [0, 0, 1, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ex*ez
 
@@ -1173,7 +1077,7 @@ Symbol: Identity   Expression: Matrix([[1]])
 Matrix([[ey**2]])
 Basis vector: [0, 0, 0, 1, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ey**2
 
@@ -1185,7 +1089,7 @@ Symbol: Identity   Expression: Matrix([[1]])
 Matrix([[ez**2]])
 Basis vector: [0, 0, 0, 0, 0, 1]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ez**2
 
@@ -1237,7 +1141,7 @@ Number of independent kp models: 4
 Matrix([[ex**2]])
 Basis vector: [1, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ex**2
 
@@ -1249,7 +1153,7 @@ Symbol: Identity   Expression: Matrix([[1]])
 Matrix([[ex*ez]])
 Basis vector: [0, 0, 1, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ex*ez
 
@@ -1261,7 +1165,7 @@ Symbol: Identity   Expression: Matrix([[1]])
 Matrix([[ey**2]])
 Basis vector: [0, 0, 0, 1, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ey**2
 
@@ -1273,7 +1177,7 @@ Symbol: Identity   Expression: Matrix([[1]])
 Matrix([[ez**2]])
 Basis vector: [0, 0, 0, 0, 0, 1]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ez**2
 
@@ -1361,7 +1265,7 @@ Number of independent kp models: 6
 Matrix([[ex**2]])
 Basis vector: [1, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ex**2
 
@@ -1373,7 +1277,7 @@ Symbol: Identity   Expression: Matrix([[1]])
 Matrix([[ex*ey]])
 Basis vector: [0, 1, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ex*ey
 
@@ -1385,7 +1289,7 @@ Symbol: Identity   Expression: Matrix([[1]])
 Matrix([[ex*ez]])
 Basis vector: [0, 0, 1, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ex*ez
 
@@ -1397,7 +1301,7 @@ Symbol: Identity   Expression: Matrix([[1]])
 Matrix([[ey**2]])
 Basis vector: [0, 0, 0, 1, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ey**2
 
@@ -1409,7 +1313,7 @@ Symbol: Identity   Expression: Matrix([[1]])
 Matrix([[ey*ez]])
 Basis vector: [0, 0, 0, 0, 1, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ey*ez
 
@@ -1421,7 +1325,7 @@ Symbol: Identity   Expression: Matrix([[1]])
 Matrix([[ez**2]])
 Basis vector: [0, 0, 0, 0, 0, 1]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ez**2
 
@@ -1475,7 +1379,7 @@ Number of independent kp models: 6
 Matrix([[ex**2, 0], [0, ex**2]])
 Basis vector: [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ex**2
 
@@ -1487,7 +1391,7 @@ Symbol: s_0   Expression: Matrix([[1, 0], [0, 1]])
 Matrix([[ex*ey, 0], [0, ex*ey]])
 Basis vector: [0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ex*ey
 
@@ -1499,7 +1403,7 @@ Symbol: s_0   Expression: Matrix([[1, 0], [0, 1]])
 Matrix([[ex*ez, 0], [0, ex*ez]])
 Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ex*ez
 
@@ -1511,7 +1415,7 @@ Symbol: s_0   Expression: Matrix([[1, 0], [0, 1]])
 Matrix([[ey**2, 0], [0, ey**2]])
 Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ey**2
 
@@ -1523,7 +1427,7 @@ Symbol: s_0   Expression: Matrix([[1, 0], [0, 1]])
 Matrix([[ey*ez, 0], [0, ey*ez]])
 Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ey*ez
 
@@ -1535,7 +1439,7 @@ Symbol: s_0   Expression: Matrix([[1, 0], [0, 1]])
 Matrix([[ez**2, 0], [0, ez**2]])
 Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ez**2
 
@@ -1629,7 +1533,7 @@ Number of independent kp models: 4
 Matrix([[ex**2]])
 Basis vector: [1, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ex**2
 
@@ -1641,7 +1545,7 @@ Symbol: Identity   Expression: Matrix([[1]])
 Matrix([[ex*ez]])
 Basis vector: [0, 0, 1, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ex*ez
 
@@ -1653,7 +1557,7 @@ Symbol: Identity   Expression: Matrix([[1]])
 Matrix([[ey**2]])
 Basis vector: [0, 0, 0, 1, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ey**2
 
@@ -1665,7 +1569,7 @@ Symbol: Identity   Expression: Matrix([[1]])
 Matrix([[ez**2]])
 Basis vector: [0, 0, 0, 0, 0, 1]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ez**2
 
@@ -1717,7 +1621,7 @@ Number of independent kp models: 4
 Matrix([[ex**2]])
 Basis vector: [1, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ex**2
 
@@ -1729,7 +1633,7 @@ Symbol: Identity   Expression: Matrix([[1]])
 Matrix([[ex*ez]])
 Basis vector: [0, 0, 1, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ex*ez
 
@@ -1741,7 +1645,7 @@ Symbol: Identity   Expression: Matrix([[1]])
 Matrix([[ey**2]])
 Basis vector: [0, 0, 0, 1, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ey**2
 
@@ -1753,7 +1657,7 @@ Symbol: Identity   Expression: Matrix([[1]])
 Matrix([[ez**2]])
 Basis vector: [0, 0, 0, 0, 0, 1]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ez**2
 
@@ -1807,7 +1711,7 @@ Number of independent kp models: 4
 Matrix([[ex**2, 0], [0, ex**2]])
 Basis vector: [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ex**2
 
@@ -1819,7 +1723,7 @@ Symbol: s_0   Expression: Matrix([[1, 0], [0, 1]])
 Matrix([[ex*ez, 0], [0, ex*ez]])
 Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ex*ez
 
@@ -1831,7 +1735,7 @@ Symbol: s_0   Expression: Matrix([[1, 0], [0, 1]])
 Matrix([[ey**2, 0], [0, ey**2]])
 Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ey**2
 
@@ -1843,7 +1747,7 @@ Symbol: s_0   Expression: Matrix([[1, 0], [0, 1]])
 Matrix([[ez**2, 0], [0, ez**2]])
 Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM1  
+Decomposed basis (not symmetric):
 Coefficient basis:
 ez**2
 

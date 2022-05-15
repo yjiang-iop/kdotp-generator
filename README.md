@@ -116,3 +116,6 @@ The original *kdotp-symmetry* package is well-written and the main program struc
 - Add a post-processing step to decompose the Hamiltonian into symmetrical monomial function and Hermitian matrices bases using linear coirreps.
 - Pre-compute effective Hamiltonians in magnetic space groups up to the third order.
 - Slightly improve the efficiency of the code.
+
+## Bug fixing
+- 2022.5: We update the kp results for some type-IV MSGs, which have problematic representation matrices for some antiunitary operators.

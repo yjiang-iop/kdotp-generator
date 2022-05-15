@@ -146,7 +146,7 @@ Number of independent kp models: 3
 Matrix([[0, Bx*Ex + Bx*Ey/2 + By*Ex/2 + By*Ey], [Bx*Ex + Bx*Ey/2 + By*Ex/2 + By*Ey, 0]])
 Basis vector: [0, 1, 0, 0, 0, 1/2, 0, 0, 0, 0, 0, 0, 0, 1/2, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM4  
+Decomposed basis (not symmetric):
 Coefficient basis:
 Bx*Ex + Bx*Ey/2 + By*Ex/2 + By*Ey
 
@@ -158,7 +158,7 @@ Symbol: s_1   Expression: Matrix([[0, 1], [1, 0]])
 Matrix([[0, I*Bx*Ey - I*By*Ex], [-I*Bx*Ey + I*By*Ex, 0]])
 Basis vector: [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM3  
+Decomposed basis (not symmetric):
 Coefficient basis:
 -Bx*Ey + By*Ex
 
@@ -170,7 +170,7 @@ Symbol: s_2   Expression: Matrix([[0, -I], [I, 0]])
 Matrix([[0, Bz*Ez], [Bz*Ez, 0]])
 Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0]
 
-Decomposed basis using linear IR: 1 GM4  
+Decomposed basis (not symmetric):
 Coefficient basis:
 Bz*Ez
 
@@ -234,15 +234,15 @@ Number of independent kp models: 1
 Matrix([[0, Bx*Ex - sqrt(3)*I*Bx*Ex + 2*Bx*Ey + 2*By*Ex + By*Ey + sqrt(3)*I*By*Ey], [Bx*Ex + sqrt(3)*I*Bx*Ex + 2*Bx*Ey + 2*By*Ex + By*Ey - sqrt(3)*I*By*Ey, 0]])
 Basis vector: [0, 1, sqrt(3), 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 1, -sqrt(3), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM6  
+Decomposed basis (not symmetric):
 Coefficient basis:
--sqrt(6)*I*(Bx*Ex - By*Ey)/2 + sqrt(2)*(Bx*Ex + 2*Bx*Ey + 2*By*Ex + By*Ey)/2
--sqrt(6)*I*(Bx*Ex - By*Ey)/2 - sqrt(2)*(Bx*Ex + 2*Bx*Ey + 2*By*Ex + By*Ey)/2
+Bx*Ex + 2*Bx*Ey + 2*By*Ex + By*Ey
+sqrt(3)*(Bx*Ex - By*Ey)
 
 Matrix basis:
-Symbol: sqrt(2)/2* s_1 + -sqrt(2)*I/2* s_2   Expression: Matrix([[0, 0], [sqrt(2), 0]]) 
+Symbol: s_1   Expression: Matrix([[0, 1], [1, 0]]) 
 
-Symbol: -sqrt(2)/2* s_1 + -sqrt(2)*I/2* s_2   Expression: Matrix([[0, -sqrt(2)], [0, 0]]) 
+Symbol: s_2   Expression: Matrix([[0, -I], [I, 0]]) 
 
 -----------------------------------------------------
 
@@ -287,8 +287,8 @@ Irreducible co-representation matrices of generators:
  [[0 -1]
  [1 0]]
 Antiunitary op:
- [[0 -1]
- [1 0]]
+ [[0 1]
+ [-1 0]]
 
 
 Print kp results:
@@ -301,15 +301,15 @@ Number of independent kp models: 1
 Matrix([[0, Bx*Ex + sqrt(3)*I*Bx*Ex + 2*Bx*Ey + 2*By*Ex + By*Ey - sqrt(3)*I*By*Ey], [Bx*Ex - sqrt(3)*I*Bx*Ex + 2*Bx*Ey + 2*By*Ex + By*Ey + sqrt(3)*I*By*Ey, 0]])
 Basis vector: [0, 1, -sqrt(3), 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 1, sqrt(3), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM6  
+Decomposed basis (not symmetric):
 Coefficient basis:
-sqrt(6)*I*(-Bx*Ex + By*Ey)/2 + sqrt(2)*(Bx*Ex + 2*Bx*Ey + 2*By*Ex + By*Ey)/2
-sqrt(6)*I*(-Bx*Ex + By*Ey)/2 - sqrt(2)*(Bx*Ex + 2*Bx*Ey + 2*By*Ex + By*Ey)/2
+Bx*Ex + 2*Bx*Ey + 2*By*Ex + By*Ey
+sqrt(3)*(-Bx*Ex + By*Ey)
 
 Matrix basis:
-Symbol: sqrt(2)/2* s_1 + sqrt(2)*I/2* s_2   Expression: Matrix([[0, sqrt(2)], [0, 0]]) 
+Symbol: s_1   Expression: Matrix([[0, 1], [1, 0]]) 
 
-Symbol: -sqrt(2)/2* s_1 + sqrt(2)*I/2* s_2   Expression: Matrix([[0, 0], [-sqrt(2), 0]]) 
+Symbol: s_2   Expression: Matrix([[0, -I], [I, 0]]) 
 
 -----------------------------------------------------
 
@@ -1047,7 +1047,7 @@ Number of independent kp models: 3
 Matrix([[0, Bx*Ex + Bx*Ey/2 + By*Ex/2 + By*Ey], [Bx*Ex + Bx*Ey/2 + By*Ex/2 + By*Ey, 0]])
 Basis vector: [0, 1, 0, 0, 0, 1/2, 0, 0, 0, 0, 0, 0, 0, 1/2, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM4  
+Decomposed basis (not symmetric):
 Coefficient basis:
 Bx*Ex + Bx*Ey/2 + By*Ex/2 + By*Ey
 
@@ -1059,7 +1059,7 @@ Symbol: s_1   Expression: Matrix([[0, 1], [1, 0]])
 Matrix([[0, I*Bx*Ey - I*By*Ex], [-I*Bx*Ey + I*By*Ex, 0]])
 Basis vector: [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM3  
+Decomposed basis (not symmetric):
 Coefficient basis:
 -Bx*Ey + By*Ex
 
@@ -1071,7 +1071,7 @@ Symbol: s_2   Expression: Matrix([[0, -I], [I, 0]])
 Matrix([[0, Bz*Ez], [Bz*Ez, 0]])
 Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0]
 
-Decomposed basis using linear IR: 1 GM4  
+Decomposed basis (not symmetric):
 Coefficient basis:
 Bz*Ez
 
@@ -1135,15 +1135,15 @@ Number of independent kp models: 1
 Matrix([[0, Bx*Ex - sqrt(3)*I*Bx*Ex + 2*Bx*Ey + 2*By*Ex + By*Ey + sqrt(3)*I*By*Ey], [Bx*Ex + sqrt(3)*I*Bx*Ex + 2*Bx*Ey + 2*By*Ex + By*Ey - sqrt(3)*I*By*Ey, 0]])
 Basis vector: [0, 1, sqrt(3), 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 1, -sqrt(3), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM6  
+Decomposed basis (not symmetric):
 Coefficient basis:
--sqrt(6)*I*(Bx*Ex - By*Ey)/2 + sqrt(2)*(Bx*Ex + 2*Bx*Ey + 2*By*Ex + By*Ey)/2
--sqrt(6)*I*(Bx*Ex - By*Ey)/2 - sqrt(2)*(Bx*Ex + 2*Bx*Ey + 2*By*Ex + By*Ey)/2
+Bx*Ex + 2*Bx*Ey + 2*By*Ex + By*Ey
+sqrt(3)*(Bx*Ex - By*Ey)
 
 Matrix basis:
-Symbol: sqrt(2)/2* s_1 + -sqrt(2)*I/2* s_2   Expression: Matrix([[0, 0], [sqrt(2), 0]]) 
+Symbol: s_1   Expression: Matrix([[0, 1], [1, 0]]) 
 
-Symbol: -sqrt(2)/2* s_1 + -sqrt(2)*I/2* s_2   Expression: Matrix([[0, -sqrt(2)], [0, 0]]) 
+Symbol: s_2   Expression: Matrix([[0, -I], [I, 0]]) 
 
 -----------------------------------------------------
 
@@ -1202,15 +1202,15 @@ Number of independent kp models: 1
 Matrix([[0, Bx*Ex + sqrt(3)*I*Bx*Ex + 2*Bx*Ey + 2*By*Ex + By*Ey - sqrt(3)*I*By*Ey], [Bx*Ex - sqrt(3)*I*Bx*Ex + 2*Bx*Ey + 2*By*Ex + By*Ey + sqrt(3)*I*By*Ey, 0]])
 Basis vector: [0, 1, -sqrt(3), 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 1, sqrt(3), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM6  
+Decomposed basis (not symmetric):
 Coefficient basis:
-sqrt(6)*I*(-Bx*Ex + By*Ey)/2 + sqrt(2)*(Bx*Ex + 2*Bx*Ey + 2*By*Ex + By*Ey)/2
-sqrt(6)*I*(-Bx*Ex + By*Ey)/2 - sqrt(2)*(Bx*Ex + 2*Bx*Ey + 2*By*Ex + By*Ey)/2
+Bx*Ex + 2*Bx*Ey + 2*By*Ex + By*Ey
+sqrt(3)*(-Bx*Ex + By*Ey)
 
 Matrix basis:
-Symbol: sqrt(2)/2* s_1 + sqrt(2)*I/2* s_2   Expression: Matrix([[0, sqrt(2)], [0, 0]]) 
+Symbol: s_1   Expression: Matrix([[0, 1], [1, 0]]) 
 
-Symbol: -sqrt(2)/2* s_1 + sqrt(2)*I/2* s_2   Expression: Matrix([[0, 0], [-sqrt(2), 0]]) 
+Symbol: s_2   Expression: Matrix([[0, -I], [I, 0]]) 
 
 -----------------------------------------------------
 
@@ -2406,7 +2406,7 @@ Number of independent kp models: 7
 Matrix([[Bx*Ex + Bx*Ey/2 + By*Ex/2, 0], [0, -Bx*Ex - Bx*Ey/2 - By*Ex/2]])
 Basis vector: [0, 0, 0, 1, 0, 0, 0, 1/2, 0, 0, 0, 0, 0, 0, 0, 1/2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM2  
+Decomposed basis (not symmetric):
 Coefficient basis:
 Bx*Ex + Bx*Ey/2 + By*Ex/2
 
@@ -2418,7 +2418,7 @@ Symbol: s_3   Expression: Matrix([[1, 0], [0, -1]])
 Matrix([[0, -I*By*Ex - I*By*Ey/2], [I*By*Ex + I*By*Ey/2, 0]])
 Basis vector: [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1/2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM4  
+Decomposed basis (not symmetric):
 Coefficient basis:
 By*(2*Ex + Ey)/2
 
@@ -2430,7 +2430,7 @@ Symbol: s_2   Expression: Matrix([[0, -I], [I, 0]])
 Matrix([[0, Bz*Ex + Bz*Ey/2], [Bz*Ex + Bz*Ey/2, 0]])
 Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1/2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM3  
+Decomposed basis (not symmetric):
 Coefficient basis:
 Bz*(2*Ex + Ey)/2
 
@@ -2442,7 +2442,7 @@ Symbol: s_1   Expression: Matrix([[0, 1], [1, 0]])
 Matrix([[0, -I*Bx*Ey - I*By*Ey/2], [I*Bx*Ey + I*By*Ey/2, 0]])
 Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1/2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM4  
+Decomposed basis (not symmetric):
 Coefficient basis:
 Ey*(2*Bx + By)/2
 
@@ -2454,7 +2454,7 @@ Symbol: s_2   Expression: Matrix([[0, -I], [I, 0]])
 Matrix([[By*Ey, 0], [0, -By*Ey]])
 Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM2  
+Decomposed basis (not symmetric):
 Coefficient basis:
 By*Ey
 
@@ -2466,7 +2466,7 @@ Symbol: s_3   Expression: Matrix([[1, 0], [0, -1]])
 Matrix([[0, Bx*Ez + By*Ez/2], [Bx*Ez + By*Ez/2, 0]])
 Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1/2, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM3  
+Decomposed basis (not symmetric):
 Coefficient basis:
 Ez*(2*Bx + By)/2
 
@@ -2478,7 +2478,7 @@ Symbol: s_1   Expression: Matrix([[0, 1], [1, 0]])
 Matrix([[Bz*Ez, 0], [0, -Bz*Ez]])
 Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 
-Decomposed basis using linear IR: 1 GM2  
+Decomposed basis (not symmetric):
 Coefficient basis:
 Bz*Ez
 
@@ -2995,7 +2995,7 @@ Number of independent kp models: 7
 Matrix([[Bx*Ex + Bx*Ey/2 + By*Ex/2, 0], [0, -Bx*Ex - Bx*Ey/2 - By*Ex/2]])
 Basis vector: [0, 0, 0, 1, 0, 0, 0, 1/2, 0, 0, 0, 0, 0, 0, 0, 1/2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM2  
+Decomposed basis (not symmetric):
 Coefficient basis:
 Bx*Ex + Bx*Ey/2 + By*Ex/2
 
@@ -3007,7 +3007,7 @@ Symbol: s_3   Expression: Matrix([[1, 0], [0, -1]])
 Matrix([[0, By*Ex + By*Ey/2], [By*Ex + By*Ey/2, 0]])
 Basis vector: [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1/2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM4  
+Decomposed basis (not symmetric):
 Coefficient basis:
 By*(2*Ex + Ey)/2
 
@@ -3019,7 +3019,7 @@ Symbol: s_1   Expression: Matrix([[0, 1], [1, 0]])
 Matrix([[0, -I*Bz*Ex - I*Bz*Ey/2], [I*Bz*Ex + I*Bz*Ey/2, 0]])
 Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1/2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM3  
+Decomposed basis (not symmetric):
 Coefficient basis:
 Bz*(2*Ex + Ey)/2
 
@@ -3031,7 +3031,7 @@ Symbol: s_2   Expression: Matrix([[0, -I], [I, 0]])
 Matrix([[0, Bx*Ey + By*Ey/2], [Bx*Ey + By*Ey/2, 0]])
 Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1/2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM4  
+Decomposed basis (not symmetric):
 Coefficient basis:
 Ey*(2*Bx + By)/2
 
@@ -3043,7 +3043,7 @@ Symbol: s_1   Expression: Matrix([[0, 1], [1, 0]])
 Matrix([[By*Ey, 0], [0, -By*Ey]])
 Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM2  
+Decomposed basis (not symmetric):
 Coefficient basis:
 By*Ey
 
@@ -3055,7 +3055,7 @@ Symbol: s_3   Expression: Matrix([[1, 0], [0, -1]])
 Matrix([[0, -I*Bx*Ez - I*By*Ez/2], [I*Bx*Ez + I*By*Ez/2, 0]])
 Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1/2, 0, 0, 0, 0, 0]
 
-Decomposed basis using linear IR: 1 GM3  
+Decomposed basis (not symmetric):
 Coefficient basis:
 Ez*(2*Bx + By)/2
 
@@ -3067,7 +3067,7 @@ Symbol: s_2   Expression: Matrix([[0, -I], [I, 0]])
 Matrix([[Bz*Ez, 0], [0, -Bz*Ez]])
 Basis vector: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
 
-Decomposed basis using linear IR: 1 GM2  
+Decomposed basis (not symmetric):
 Coefficient basis:
 Bz*Ez
 
