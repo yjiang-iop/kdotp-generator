@@ -105,6 +105,12 @@ For each independent kp basis, there are 5 parts:
 When fails to decompose into symmetric basis, the output will be marked as `not symmetric`. This message only means the decomposition fails, and the kp results are still correct.
 
 
+## Pre-computed results
+We have pre-computed kp results in the `MSG_kp_results` folder and `MSG_kp_results_pair` folder, which contain the kp Hamiltonians of a single IRREP and a pair of IRREPs, respectively.
+In the `MSG_kp_results` folder, there are 1651 subfolders that contain the results of 1651 Shubinikov space groups. 
+There is also a `read_result.py` file in this folder which can help read certain kp results of given MSG number, IRREP label, and kp variable (github shows only 1000 files on the webpage, and this file is hidden, but can be seen by downloading the data). 
+ 
+
 ## Tips
 There are a few tips on the usage of this package:
 - For `order>3` and `dim>8`, the computation could be very slow (~ a few hours). 
