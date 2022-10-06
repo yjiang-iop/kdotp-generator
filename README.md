@@ -103,6 +103,7 @@ For each independent kp basis, there are 5 parts:
 - Linear IR: the linear irreducible corepresentation (coirrep) label of the decomposed basis. The definition of linear coirreps can be found in the `MSG_kp_results` folder.
 - Coefficient basis and Matrix basis: the decomposed symmetric basis. 
 When fails to decompose into symmetric basis, the output will be marked as `not symmetric`. This message only means the decomposition fails, and the kp results are still correct.
+- The output k-monomials are written in basis of `kx,ky,kz`. Note that they represent three directions of the coordinate system of the input O(3) rotation matrices (not necessarily cartesian coordinates). For example, for trigonal and hexagonal lattice systems, the rotation matrices on Bilbao are not orthogonal matrices, but written in the conventional lattices. If one wants to compute the kp Hamilonians in cartesian coordinates, the input rotation matrices must also be written in cartesian coordinates.
 
 
 ## Pre-computed results
