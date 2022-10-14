@@ -18,6 +18,7 @@ Recently, we also add a new folder `MSG_kp_results_pair`, which contains the kp 
 ## Example
 Two examples are given in the *examples* folder, i.e., *input1.py* and *input2.py*, which calculate the effective Hamiltonians for k and (E, B), respectively, for non-magnetic space group 123 P4/mmm, representation $\Gamma_6, \Gamma_9$, up to the second order. 
 
+File *gen_rot_cartesian.py* in this folder can be used to generate O(3) rotation matrices in Cartesian coordinates.
 
 ## Inputs
 Three parameters need to be specified to run the main function `symmetric_hamiltonian`:
@@ -103,12 +104,12 @@ For each independent kp basis, there are 5 parts:
 - Linear IR: the linear irreducible corepresentation (coirrep) label of the decomposed basis. The definition of linear coirreps can be found in the `MSG_kp_results` folder.
 - Coefficient basis and Matrix basis: the decomposed symmetric basis. 
 When fails to decompose into symmetric basis, the output will be marked as `not symmetric`. This message only means the decomposition fails, and the kp results are still correct.
-- The output k-monomials are written in basis of `kx,ky,kz`. Note that they represent three directions of the coordinate system of the input O(3) rotation matrices (not necessarily cartesian coordinates). For example, for trigonal and hexagonal lattice systems, the rotation matrices on Bilbao are not orthogonal matrices, but written in the conventional lattices. If one wants to compute the kp Hamilonians in cartesian coordinates, the input rotation matrices must also be written in cartesian coordinates.
+- The output k-monomials are written in basis of `kx,ky,kz`. Note that they represent three directions of the coordinate system of the input O(3) rotation matrices (not necessarily cartesian coordinates). For example, for trigonal and hexagonal lattice systems, the rotation matrices on Bilbao are not orthogonal matrices, but written in the conventional lattices. If one wants to compute the kp Hamilonians in cartesian coordinates, the input rotation matrices must also be written in cartesian coordinates (*gen_rot_cartesian.py* in the `example` folder can be used to generate O(3) rotation matrices in Cartesian coordinates).
 
 
 ## Pre-computed results
 We have pre-computed kp results in the `MSG_kp_results` folder and `MSG_kp_results_pair` folder, which contain the kp Hamiltonians of a single IRREP and a pair of IRREPs, respectively.
-In the `MSG_kp_results` folder, there are 1651 subfolders that contain the results of 1651 Shubinikov space groups. 
+In the `MSG_kp_results` folder, there are 1651 subfolders that contain the results of 1651 Shubinikov space groups, with kp results written in conventional lattice. 
 There is also a `read_result.py` file in this folder which can help read certain kp results of given MSG number, IRREP label, and kp variable (github shows only 1000 files on the webpage, and this file is hidden, but can be seen by downloading the data). 
  
 
